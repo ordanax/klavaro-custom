@@ -18,6 +18,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <locale.h>
 #include <glib.h>
 #include <glib/gstdio.h>
 #include <pango/pango-attributes.h>
@@ -518,6 +519,7 @@ main (int argc, char *argv[])
 	/* Localization
 	 */
 #ifdef ENABLE_NLS
+	setlocale (LC_ALL, "");
 	bindtextdomain (GETTEXT_PACKAGE, PACKAGE_LOCALE_DIR);
 	bind_textdomain_codeset (GETTEXT_PACKAGE, "UTF-8");
 	textdomain (GETTEXT_PACKAGE);
