@@ -39,7 +39,8 @@ typedef enum
 	TT_BASIC,
 	TT_ADAPT,
 	TT_VELO,
-	TT_FLUID
+	TT_FLUID,
+	TT_ERROR_PRACTICE
 } TutorType;
 
 typedef enum

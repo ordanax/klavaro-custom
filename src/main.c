@@ -423,6 +423,7 @@ main_window_init ()
 	gtk_label_set_attributes (GTK_LABEL (get_wg ("label_main_adapt")), palist);
 	gtk_label_set_attributes (GTK_LABEL (get_wg ("label_main_velo")), palist);
 	gtk_label_set_attributes (GTK_LABEL (get_wg ("label_main_fluid")), palist);
+	gtk_label_set_attributes (GTK_LABEL (get_wg ("label_main_error")), palist);
 
 	/* Set main labels (for translation)
 	 */
@@ -443,6 +444,9 @@ main_window_init ()
 	g_free (tmp);
 	tmp = g_strdup_printf ("4 - %s", _("Fluidity"));
 	gtk_label_set_text (GTK_LABEL (get_wg ("label_main_fluid")), tmp);
+	g_free (tmp);
+	tmp = g_strdup_printf ("5 - %s", _("Error Practice"));
+	gtk_label_set_text (GTK_LABEL (get_wg ("label_main_error")), tmp);
 	g_free (tmp);
 
 	/* Set version
@@ -482,6 +486,9 @@ main_window_init ()
 			break;
 		case TT_FLUID:
 			on_button_fluid_clicked (NULL, NULL);
+			break;
+		case TT_ERROR_PRACTICE:
+			on_button_error_practice_clicked (NULL, NULL);
 			break;
 		}
 	}

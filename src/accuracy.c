@@ -27,6 +27,7 @@
 #include "keyboard.h"
 #include "adaptability.h"
 #include "accuracy.h"
+#include "error_logger.h"
 #include "plot.h"
 
 /* Touch errors
@@ -165,6 +166,7 @@ accur_init ()
 	gsize len;
 
 	accur_reset ();
+	error_logger_init ();
 
 	kb_name = g_strdup (keyb_get_name ());
 	for (i=0; kb_name[i]; i++)
@@ -271,6 +273,9 @@ accur_correct (gunichar uchr, double touch_time)
 	if (!keyb_is_inset (uchr))
 		return;
 
+	/* Log to detailed error logger */
+	error_log_correct (uchr);
+
 	/*
 	 * First, accuracy
 	 */
@@ -337,6 +342,9 @@ accur_wrong (gunichar uchr)
 		return;
 	if (!keyb_is_inset (uchr))
 		return;
+
+	/* Log to detailed error logger */
+	error_log_error (uchr, uchr, "touch_typing");
 
 	/*
 	 * Only for accuracy
@@ -623,6 +631,7 @@ accur_close ()
 	gchar *tmp;
 	gchar *utf8;
 	FILE *fh;
+	ParetoAnalysis *pareto;
 
 	accur_sort ();
 
@@ -675,6 +684,17 @@ accur_close ()
 	}
 	else
 		g_message ("Could not save a proficiency log file at %s", main_path_stats ());
+
+	/*
+	 * Third, save detailed error log and perform Pareto analysis
+	 */
+	error_logger_save ();
+	pareto = error_pareto_analyze ();
+	if (pareto)
+	{
+		error_pareto_save (pareto);
+		error_pareto_free (pareto);
+	}
 
 	g_free (kb_name);
 }

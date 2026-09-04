@@ -40,6 +40,7 @@
 #include "velocity.h"
 #include "fluidness.h"
 #include "accuracy.h"
+#include "error_practice.h"
 #include "top10.h"
 #include "tutor.h"
 
@@ -112,7 +113,7 @@ tutor_get_type ()
 gchar *
 tutor_get_type_name ()
 {
-	static gchar type_name[4][6] = { "basic", "adapt", "velo", "fluid" };
+	static gchar type_name[5][6] = { "basic", "adapt", "velo", "fluid", "error" };
 
 	return (type_name[tutor.type]);
 }
@@ -387,6 +388,12 @@ tutor_init (TutorType tt_type)
 		tmp_name =
 			g_strdup (_("Fluidness exercises: accuracy typing good sense paragraphs."));
 		break;
+
+	case TT_ERROR_PRACTICE:
+		tmp_title = g_strdup (_("Klavaro - Error Practice"));
+		tmp_name =
+			g_strdup (_("Error practice: focus on your most frequent mistakes."));
+		break;
 	}
 	gtk_window_set_title (get_win ("window_tutor"), tmp_title);
 	wg = get_wg ("label_heading");
@@ -422,6 +429,10 @@ tutor_init (TutorType tt_type)
 	else if (tutor.type == TT_FLUID)
 	{
 		fluid_init ();
+	}
+	else if (tutor.type == TT_ERROR_PRACTICE)
+	{
+		error_practice_init ();
 	}
 	tutor_update ();
 }
@@ -568,6 +579,21 @@ tutor_update_start ()
 		break;
 	case TT_FLUID:
 		fluid_draw_random_paragraphs ();
+		break;
+	case TT_ERROR_PRACTICE:
+		{
+			gchar *practice_text;
+			GtkTextBuffer *buf;
+			
+			buf = gtk_text_view_get_buffer (GTK_TEXT_VIEW (get_wg ("text_tutor")));
+			practice_text = error_practice_get_text ();
+			gtk_text_buffer_set_text (buf, practice_text, -1);
+			g_free (practice_text);
+			
+			wg = get_wg ("label_heading");
+			gtk_label_set_text (GTK_LABEL (wg), _("Error Practice: focusing on your most frequent mistakes"));
+		}
+		break;
 	}
 
 	/*

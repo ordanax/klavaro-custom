@@ -30,6 +30,8 @@ void on_button_velo_clicked (GtkButton *button, gpointer user_data);
 
 void on_button_fluid_clicked (GtkButton *button, gpointer user_data);
 
+void on_button_error_practice_clicked (GtkButton *button, gpointer user_data);
+
 
 void on_virtual_key_clicked (GtkButton * button, gpointer user_data);
 

@@ -16,6 +16,8 @@ klavaro_SOURCES = \
 	velocity.c velocity.h \
 	fluidness.c fluidness.h \
 	accuracy.c accuracy.h \
+	error_logger.c error_logger.h \
+	error_practice.c error_practice.h \
 	top10.c top10.h 
 
 AM_CPPFLAGS = \

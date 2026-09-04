@@ -97,6 +97,13 @@ on_button_fluid_clicked (GtkButton *button, gpointer user_data)
 }
 
 G_MODULE_EXPORT void
+on_button_error_practice_clicked (GtkButton *button, gpointer user_data)
+{
+	window_save ("main");
+	tutor_init (TT_ERROR_PRACTICE);
+}
+
+G_MODULE_EXPORT void
 on_button_about_clicked (GtkButton *button, gpointer user_data)
 {
 	gtk_widget_show (get_wg ("aboutdialog"));
