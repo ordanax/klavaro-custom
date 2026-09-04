@@ -1,0 +1,40 @@
+# Build artifacts
+*.o
+*.lo
+*.la
+*.a
+*.lib
+*.so
+*.dll
+*.dylib
+*.exe
+*.out
+
+# Autotools generated files
+autom4te.cache/
+config.h
+config.log
+config.status
+config.sub
+config.guess
+configure
+stamp-h1
+libtool
+aclocal.m4
+Makefile
+.in
+
+# Compiled files
+/src/.deps/
+/src/.libs/
+/src/klavaro
+
+# User specific files
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log

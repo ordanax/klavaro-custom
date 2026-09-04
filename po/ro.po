@@ -1,0 +1,1410 @@
+# Mesajele în limba română pentru pachetul klavaro.
+# Copyright © 2020, 2022 Free Software Foundation, Inc.
+# This file is distributed under the same license as the klavaro package.
+#
+# Daniel Șerbănescu <daniel@serbanescu.dk>, 2020.
+# Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 2022.
+#
+# Cronologia traducerii fișierului „klavaro”:
+# Traducerea inițială, făcută de DȘ, pentru versiunea klavaro 3.10 (13% - tradus).
+# Actualizare a mesajelor, de la fișierul „klavaro-3.12.pot”.
+# Actualizare a algoritmului formelor de plural (de la „trei-vechi” la „trei-actual”).
+# NU și a mesajelor traduse (acestea au rămas neschimbate).
+# Actualizări realizate de Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>, 15.01.2022.
+# Actualizare a algoritmului formelor de plural (de la „trei-actual” la „patru-experimental”).
+# Actualizare a traducerii pentru versiunea 3.12, făcută de R-GC (100% - tradus), 2022.
+# Actualizare a traducerii pentru versiunea Y, făcută de X, Z(anul).
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: klavaro 3.12\n"
+"Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2022-11-24 19:17-0300\n"
+"PO-Revision-Date: 2022-11-13 21:59+0100\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <translation-team-ro@lists.sourceforge.net>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=((n==1) ? 0 : (n==2) ? 1 : (n==0 || (n%100 "
+"> 0 && n%100 < 20)) ? 2 : 3);\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"X-Generator: Poedit 3.1.1\n"
+
+#: ../data/klavaro.glade.h:1
+msgid "Klavaro - Progress"
+msgstr "Klavaro - Progres"
+
+#: ../data/klavaro.glade.h:2
+msgid "_Lesson:"
+msgstr "_Lecție:"
+
+#: ../data/klavaro.glade.h:3
+msgid "Value"
+msgstr "Valoare"
+
+#: ../data/klavaro.glade.h:4
+msgid "Clear progress data."
+msgstr "Curăță datele progresului."
+
+#: ../data/klavaro.glade.h:5
+msgid "_Reset"
+msgstr "_Restabilește"
+
+#: ../data/klavaro.glade.h:6
+msgid "Close this window, returning to the exercise."
+msgstr "Închide această fereastră, întorcându-vă la exercițiu."
+
+#: ../data/klavaro.glade.h:7
+msgid "_Close"
+msgstr "În_chide"
+
+#. Everything means ALL the progress charts statistics.
+#: ../data/klavaro.glade.h:9
+msgid "everything!"
+msgstr "totul!"
+
+#. Confirmation check-button for removing data.
+#: ../data/klavaro.glade.h:11
+msgid "Clear data for every module, if checked!"
+msgstr "Curăță date pentru fiecare modul, dacă este bifat!"
+
+#: ../data/klavaro.glade.h:12
+msgid "Load other exercises/lessons"
+msgstr "Încarcă alte exerciții/lecții"
+
+#: ../data/klavaro.glade.h:13
+msgid "_Other texts"
+msgstr "_Alte texte"
+
+#: ../data/klavaro.glade.h:14
+msgid "Edit the character set to be used in this lesson."
+msgstr ""
+"Editați setul de caractere ce urmează să fie folosit în această lecție."
+
+#: ../data/klavaro.glade.h:15
+msgid "This is a specific exercise, adjusted to your error profile."
+msgstr "Acesta este un exercițiu specific, adaptat profilului dvs. de eroare."
+
+#: ../data/klavaro.glade.h:16
+msgid ""
+"Edit the character set to be used in lessons after 43: they are customizable!"
+msgstr ""
+"Editați setul de caractere care urmează să fie folosit în lecțiile de după "
+"cea de-a 43-a: sunt personalizabile!"
+
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:401
+msgid "Drag and drop text here to practice with it."
+msgstr "Trageți și plasați textul aici pentru a exersa cu el."
+
+#: ../data/klavaro.glade.h:18
+msgid "Press here to restart the exercise. Hotkey: [Ctrl-R]"
+msgstr "Apăsați aici pentru a începe exercițiul. Scurtătură: [Ctrl-R]"
+
+#: ../data/klavaro.glade.h:19
+msgid "Show the virtual keyboard and the relation between fingers and keys."
+msgstr "Afișează tastatura virtuală și relația dintre degete și taste."
+
+#: ../data/klavaro.glade.h:20
+msgid "_Keyboard"
+msgstr "_Tastatura"
+
+#: ../data/klavaro.glade.h:21
+msgid "Select the font to be used in the exercise window."
+msgstr ""
+"Selectați familia și dimensiunea caracterelor ce vor fi utilizate în "
+"fereastra exercițiului."
+
+# R-GC, scrie:
+# este vorba de Titlul ferestrei, unde se poate
+# alege familia și domensiunea caracterelor
+# utilizate pentru „antrenarea” în
+# dactilografie.
+#: ../data/klavaro.glade.h:22
+msgid "Font definition"
+msgstr "Selectare familie și mărime caractere"
+
+#: ../data/klavaro.glade.h:23
+msgid "Alternative color scheme, needs restart!"
+msgstr "Schemă de culori alternativă, necesită repornire!"
+
+#: ../data/klavaro.glade.h:24
+msgid "Co_urse information"
+msgstr "Informații c_urs"
+
+#: ../data/klavaro.glade.h:25
+msgid "Charts showing the learning progress along the exercises."
+msgstr "Grafice care arată progresul de învățare de-a lungul exercițiilor."
+
+#: ../data/klavaro.glade.h:26
+msgid "_Progress"
+msgstr "_Progres"
+
+#: ../data/klavaro.glade.h:27
+msgid "Exit the application immediately."
+msgstr "Ieșiți imediat din aplicație."
+
+#: ../data/klavaro.glade.h:28
+msgid "Return to the main menu."
+msgstr "Reveniți la meniul principal."
+
+#: ../data/klavaro.glade.h:29
+msgid "B_ack to menu"
+msgstr "În_apoi la meniu"
+
+#: ../data/klavaro.glade.h:30
+msgid "Show local and external scores from other users."
+msgstr "Afișează punctajele locale și cele externe ale altor utilizatori."
+
+#: ../data/klavaro.glade.h:31
+msgid "_Top 10"
+msgstr "_Top 10"
+
+#: ../data/klavaro.glade.h:32
+msgid "Change language"
+msgstr "Schimbă limba"
+
+#: ../data/klavaro.glade.h:33
+msgid "Attention!"
+msgstr "Atenţie!"
+
+#: ../data/klavaro.glade.h:34
+msgid "Do you confirm?"
+msgstr "Confirmați?"
+
+#: ../data/klavaro.glade.h:35
+msgid "_No"
+msgstr "_Nu"
+
+#: ../data/klavaro.glade.h:36
+msgid "_Yes"
+msgstr "_Da"
+
+#: ../data/klavaro.glade.h:37
+msgid "Klavaro - Select file"
+msgstr "Klavaro - Selectare fișier"
+
+#: ../data/klavaro.glade.h:38
+msgid "_Cancel"
+msgstr "_Renunță"
+
+#: ../data/klavaro.glade.h:39
+msgid "_Open"
+msgstr "_Deschide"
+
+#: ../data/klavaro.glade.h:40
+msgid "Re_name:"
+msgstr "Rede_numire:"
+
+#: ../data/klavaro.glade.h:41
+msgid "Rename the selected item."
+msgstr "Redenumiți elementul selectat."
+
+# R-GC, scrie:
+# la început, credeam că traducerea corectă a
+# mesajului, este:
+# „Citiți un fișier text și adăugați o copie ...”
+# în realitate, traducerea corectă, este cea
+# prezentă, se referă la descrierea acțiunii
+# «unui buton».
+#: ../data/klavaro.glade.h:42
+msgid ""
+"Read a text file and add a copy of it here. The file must be encoded in "
+"UTF-8."
+msgstr ""
+"Citește un fișier text și adaugă o copie a acestuia aici. Fișierul trebuie "
+"să fie codificat în UTF-8."
+
+#: ../data/klavaro.glade.h:43
+msgid "_Open text file"
+msgstr "_Deschide un fișier text"
+
+#: ../data/klavaro.glade.h:44
+msgid "Paste text that was copied to the clipboard."
+msgstr "Lipește textul care a fost copiat în clipboard."
+
+#: ../data/klavaro.glade.h:45
+msgid "_Paste from clipboard"
+msgstr "Li_pește textul care a fost copiat în clipboard"
+
+#: ../data/klavaro.glade.h:46
+msgid "Remove the selected item."
+msgstr "Elimină elementul selectat."
+
+#: ../data/klavaro.glade.h:47
+msgid "_Remove copied file"
+msgstr "Elimină"
+
+#: ../data/klavaro.glade.h:48
+msgid "Apply the selected item to create an exercise."
+msgstr "Aplicați textul selectat și creați un exercițiu."
+
+#: ../data/klavaro.glade.h:49
+msgid "_Apply"
+msgstr "_Aplicați"
+
+#: ../data/klavaro.glade.h:50
+msgid "Close this window."
+msgstr "Închide această fereastră."
+
+#: ../data/klavaro.glade.h:51
+msgid "Country / Custom"
+msgstr "Tastatura după Țară / Definită de utilizator"
+
+#: ../data/klavaro.glade.h:52
+msgid "Variant"
+msgstr "Varianta"
+
+#: ../data/klavaro.glade.h:53
+msgid "Remove the selected custom layout."
+msgstr "Eliminați aranjamentul personalizat selectat."
+
+#: ../data/klavaro.glade.h:54
+msgid "_Remove"
+msgstr "_Eliminați"
+
+#: ../data/klavaro.glade.h:55
+msgid ""
+"Toggles the shift effect on the keys. Alternates between the upper and lower "
+"characters of the keys."
+msgstr ""
+"Comută efectul de schimbare a tastelor. Alternează între caracterele de sus "
+"și de jos ale tastelor."
+
+#: ../data/klavaro.glade.h:56
+msgid "SPACE BAR"
+msgstr "BARA DE SPAȚIU"
+
+#: ../data/klavaro.glade.h:57 ../src/keyboard.c:1726
+msgid "thumbs"
+msgstr "degetele mari"
+
+# R-GC, scrie:
+# aici, este vorba de numele tastei (ce apare
+# pe o tastatură reală)
+#: ../data/klavaro.glade.h:58
+msgid "Tab"
+msgstr "Tab"
+
+#: ../data/klavaro.glade.h:59
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: ../data/klavaro.glade.h:60
+msgid "Caps"
+msgstr "Caps"
+
+#: ../data/klavaro.glade.h:61
+msgid "S_ave as:"
+msgstr "S_alvează ca:"
+
+#: ../data/klavaro.glade.h:62
+msgid "Show previous screen."
+msgstr "Afișează ecranul precedent."
+
+#: ../data/klavaro.glade.h:63
+msgid "_Previous step"
+msgstr "_Pasul precedent"
+
+#: ../data/klavaro.glade.h:64
+msgid "Show next screen."
+msgstr "Afișează ecranul următor."
+
+#: ../data/klavaro.glade.h:65
+msgid "_Next step"
+msgstr "Pasul _următor"
+
+#: ../data/klavaro.glade.h:66
+msgid "Return without any modification."
+msgstr "Reveniți fără a salva modificările."
+
+#: ../data/klavaro.glade.h:67
+msgid "Save the current keyboard layout with the name specified above."
+msgstr ""
+"Salvați aranjamentul curent al tastaturii cu numele specificat mai sus."
+
+#: ../data/klavaro.glade.h:68
+msgid "_Save and use"
+msgstr "_Salvați și utilizați"
+
+#: ../data/klavaro.glade.h:69
+msgid ""
+"If you like those beautiful hands, click here to close this window keeping "
+"them."
+msgstr ""
+"Dacă vă plac acele mâini frumoase, faceți clic aici pentru a închide această "
+"fereastră și a le păstra."
+
+#: ../data/klavaro.glade.h:70
+msgid "_Keep hands"
+msgstr "Păstrați _mâinile"
+
+#: ../data/klavaro.glade.h:71
+msgid "Klavaro - Main menu"
+msgstr "Klavaro - Meniul principal"
+
+#: ../data/klavaro.glade.h:72
+msgid "Don't be shy about learning the basics!"
+msgstr "Nu vă sfiiți să învățați elementele de bază!"
+
+# R-GC, scrie:
+# corect, ar fi fost:
+# „Învățați cum să tastați corect”,
+# dar nu-mi prea place cum sună...
+# ***-Idei?
+# =====
+# După revizarea fișierului, DȘ spune:
+# msgstr "Învățați cum să scrieți corect"
+# → ce zici de: „Învățați să tastați corect”
+# ****
+# Mi se pare că sună destul de bine;
+# corecție aplicată!
+#: ../data/klavaro.glade.h:73
+msgid "Learn how to type correctly"
+msgstr "Învățați să tastați corect"
+
+#: ../data/klavaro.glade.h:74
+msgid "Initial training for your fingers."
+msgstr "Antrenamentul inițial pentru degetele tale."
+
+#: ../data/klavaro.glade.h:75
+msgid "First steps with initial training"
+msgstr "Primii pași ai antrenamentului"
+
+#: ../data/klavaro.glade.h:76
+msgid "Memorizing the keyboard practicing random keys exercises."
+msgstr "Memorarea tastaturii exersând exerciții cu taste aleatorii."
+
+#: ../data/klavaro.glade.h:77
+msgid "Practice with random keys"
+msgstr "Exersați cu taste aleatorii"
+
+# R-GC, scrie:
+# *** La fel ca mai sus...
+# corect, ar fi fost:
+# „Mărește-ți viteza de tastare exersând cu cuvinte aleatorii.”,
+# dar nu-mi prea place cum sună...
+# ***-Idei?
+# =====
+# După revizarea fișierului, DȘ spune:
+# msgstr "Mărește-ți viteza de scriere exersând cu cuvinte aleatorii."
+# → Îmbunătați-vă viteza de tastare exersând cu cuvinte aleatorii.
+# ****
+# La fel, mi se pare o schimbare bună; 
+# corecție aplicată!
+#: ../data/klavaro.glade.h:78
+msgid "Accelerating the touches practicing random words exercises."
+msgstr "Îmbunătați-vă viteza de tastare exersând cu cuvinte aleatorii."
+
+#: ../data/klavaro.glade.h:79
+msgid "Practice with random words"
+msgstr "Exersați cu cuvinte aleatorii"
+
+#: ../data/klavaro.glade.h:80
+msgid "Becoming proficient practicing complete paragraphs exercises."
+msgstr "Deveniți expert, exersând cu paragrafe întregi."
+
+#: ../data/klavaro.glade.h:81
+msgid "Practice with complete texts"
+msgstr "Exersați cu texte întregi"
+
+#: ../data/klavaro.glade.h:82
+msgid "Speech"
+msgstr "Dictare"
+
+# R-GC, scrie:
+# cunosc recomandările din
+# „Ghidul traducătorului de software”, dar
+# sincer să fiu, mi se pare mult mai adecvată
+# pentru acest mesaj(și pentru altele asemă-
+# nătoare), forma prescurtată de adresare, și
+# nu cea largă:
+# „Alegeți limba dumneavoastră aici”
+# mi se pare o formulare prea largă, și prea
+# »pompoasă«, pentru un mesaj de tipul
+# acesta...
+#: ../data/klavaro.glade.h:83
+msgid "Your language here."
+msgstr "Alegeți limba dvs. aici."
+
+#: ../data/klavaro.glade.h:84
+msgid ""
+"Keyboard layout for modules 1 and 2. Also used informatively in the "
+"fluidness contest."
+msgstr ""
+"Aranjamentul tastaturii pentru modulele 1 și 2. Este, de asemenea, folosit "
+"cu titlu informativ în cadrul concursului de tastare fluentă."
+
+#: ../data/klavaro.glade.h:85
+msgid "_Keyboard:"
+msgstr "_Tastatura:"
+
+#: ../data/klavaro.glade.h:86
+msgid "Language for modules 3 and 4."
+msgstr "Limba pentru modulele 3 și 4."
+
+#: ../data/klavaro.glade.h:87
+msgid "_Language:"
+msgstr "_Limba:"
+
+#: ../data/klavaro.glade.h:88
+msgid "General information about the program."
+msgstr "Informații generale despre program."
+
+#: ../data/klavaro.glade.h:89
+msgid "_About..."
+msgstr "_Despre..."
+
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
+msgid "Yet another touch typing tutor"
+msgstr "Un alt tutor de dactilografiere cu ajutorul tastaturii"
+
+# R-GC, scrie:
+# în ciuda recomandărilor pentru o bună
+# traducere, să nu uităm niciodată contextul
+# traducerilor; în cazul de față, este vorba de
+# dialogul dintre un profesor(fie el și o mașină)
+# cu elevul său...
+# Nu-mi amintesc ca vreodată, vreun profesor
+# să-mi se fi adresat cu formula politicoasă,
+# decît în cazul unui dialog ironic(deobicei) sau în cazul unui dialog glumeț, ca între
+# apropriați. Deci..., cred că formula aleasă,
+# este complet adecvată contextului prezent.
+# La fel de bine, mă pot înșela... cel puțin de
+# moment, îl voi lăsa așa.
+#: ../data/klavaro.glade.h:91
+msgid "Remember always: someone loves you!"
+msgstr "Și nu uita: cineva te iubește!"
+
+#: ../data/klavaro.glade.h:92
+msgid "Top 10"
+msgstr "Top 10"
+
+#: ../data/klavaro.glade.h:93
+msgid "Show extra information."
+msgstr "Afișează informații suplimentare."
+
+#: ../data/klavaro.glade.h:94
+msgid "Hide extra information."
+msgstr "Ascunde informațiile suplimentare."
+
+#: ../data/klavaro.glade.h:95
+msgid "Publish to the web your local scores."
+msgstr "Publicați punctajele locale pe web."
+
+#: ../data/klavaro.glade.h:96
+msgid "_Participate"
+msgstr "_Participați"
+
+#: ../data/klavaro.glade.h:97
+msgid "Download from the web the most up to date ranking."
+msgstr "Descărcați de pe web cea mai recent clasament."
+
+#: ../data/klavaro.glade.h:98
+msgid "_Update"
+msgstr "_Actualizați"
+
+#: ../data/klavaro.desktop.in.h:1
+msgid "Klavaro"
+msgstr "Klavaro"
+
+#: ../data/klavaro.desktop.in.h:3
+msgid "A very flexible and efficient touch typing tutor."
+msgstr ""
+"Un tutor de dactilografiere cu ajutorul tastaturii foarte flexibil și "
+"eficient."
+
+#: ../src/main.c:308
+msgid "(Custom)"
+msgstr "(Personalizare)"
+
+#: ../src/main.c:309
+msgid "(Edit custom)"
+msgstr "(Editați personalizarea)"
+
+#: ../src/main.c:310
+msgid "(Default)"
+msgstr "(implicit)"
+
+#: ../src/main.c:387
+#, c-format
+msgid "Dictation mode (depends on this speech synthesizer: %s)"
+msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
+msgstr[0] "Modul de dictare (depinde de acest sintetizator de vorbire: %s)"
+msgstr[1] ""
+"Modul de dictare (depinde de unul dintre aceste sintetizatoare de vorbire: "
+"%s)"
+msgstr[2] ""
+"Modul de dictare (depinde de unul dintre aceste sintetizatoare de vorbire: "
+"%s)"
+msgstr[3] ""
+"Modul de dictare (depinde de unul dintre aceste sintetizatoare de vorbire: "
+"%s)"
+
+#. Set main labels (for translation)
+#.
+#: ../src/main.c:429 ../src/keyboard.c:1385
+msgid "Introduction"
+msgstr "Introducere"
+
+#: ../src/main.c:432 ../src/top10.c:114
+msgid "Basic course"
+msgstr "Cursul de inițiere"
+
+#: ../src/main.c:435 ../src/top10.c:117
+msgid "Adaptability"
+msgstr "Adaptabilitate"
+
+# R-GC, scrie:
+# nu știu, de ce, dar mi se pare că traducerea
+# cea mai potrivită, ar fi:
+# -- „Rapiditate”
+# ținînd seama de contextul în care apare; o
+# listă cu tipurile de cursuri „predate”:
+# 	- Cursul de inițiere
+# 	- Adaptabilitate
+# 	- Viteză / Rapiditate
+# 	- Fluiditate
+# Opinii/Idei?
+#: ../src/main.c:439 ../src/main.c:441 ../src/callbacks.c:1406
+#: ../src/top10.c:94 ../src/top10.c:120
+msgid "Speed"
+msgstr "Viteză"
+
+#: ../src/main.c:444 ../src/callbacks.c:1429 ../src/top10.c:96
+#: ../src/top10.c:123
+msgid "Fluidity"
+msgstr "Fluiditate"
+
+#: ../src/callbacks.c:485 ../src/tutor.c:547
+msgid "Keys:"
+msgstr "Taste:"
+
+#: ../src/callbacks.c:880 ../src/callbacks.c:896
+msgid "Connecting..."
+msgstr "Se conectează..."
+
+#: ../src/callbacks.c:1169
+msgid "Overwrite user layout"
+msgstr "Suprascrie aranjamentul utilizatorului"
+
+#: ../src/callbacks.c:1171
+msgid "This will OVERWRITE an existent keyboard layout."
+msgstr "Acest lucru va SUPRASCRIE un aranjament existent al tastaturii."
+
+#: ../src/callbacks.c:1178
+msgid "Remove user layout"
+msgstr "Elimină aranjamentul utilizatorului"
+
+#: ../src/callbacks.c:1180
+msgid "This will REMOVE an existent keyboard layout."
+msgstr "Acest lucru va ELIMINA un aranjament existent al tastaturii."
+
+#: ../src/callbacks.c:1187 ../src/callbacks.c:1192
+msgid "Reset progress data"
+msgstr "Ștergeți datele despre progres"
+
+#: ../src/callbacks.c:1188
+msgid "This will DELETE all the progress data of all modules."
+msgstr "Acest lucru va ȘTERGE toate datele de progres din toate modulele."
+
+#: ../src/callbacks.c:1200
+#, c-format
+msgid "This will delete the data of this chart. <%s>"
+msgstr "Acest lucru va elimina datele din această diagramă <%s>"
+
+#: ../src/callbacks.c:1203
+#, c-format
+msgid "This will delete the progress data of the module. (%s)"
+msgstr "Acest lucru va șterge datele despre progres din modulul (%s)"
+
+#: ../src/callbacks.c:1403 ../src/top10.c:92
+msgid "Accuracy"
+msgstr "Acuratețe"
+
+#: ../src/callbacks.c:1406 ../src/tutor.c:1329
+msgid "(WPM)"
+msgstr "(Cuv/Min)"
+
+#: ../src/callbacks.c:1417
+msgid "Errors"
+msgstr "Erori"
+
+#: ../src/callbacks.c:1420
+msgid "Touch times (s)"
+msgstr "Timpul de apăsare (s)"
+
+#: ../src/callbacks.c:1432 ../src/tutor.c:1356 ../src/top10.c:74
+msgid "Score"
+msgstr "Punctuație"
+
+#. Translators: your language code (first 2 letters of your po-file)
+#: ../src/translation.c:524 ../src/tutor.c:1762
+msgid "en"
+msgstr "ro"
+
+#: ../src/translation.c:611
+msgid ""
+"The basic course focuses on having you read the characters presented to you "
+"on screen and typing the corresponding keys. Remember to keep your hands "
+"correctly oriented on the home row of the keyboard at all times (see "
+"introduction on main menu)."
+msgstr ""
+"Cursul de bază se concentrează pe citirea caracterelor afișate pe ecran și "
+"pe apăsarea tastelor corespunzătoare. Nu uitați să țineți mâinile în "
+"permanență pe rândul de bază al tastaturii (consultați Introducerea din "
+"meniul principal)."
+
+#: ../src/translation.c:615
+msgid ""
+"The key set used in each series will be shown in the above message line. The "
+"[Space], [Shift] and [Enter] keys may not show up there but are used very "
+"often."
+msgstr ""
+"Secvența de caractere folosită în fiecare serie va fi afișată în linia de "
+"mesaje de mai sus. Este posibil ca tastele [Spațiu], [Shift] și [Enter] să "
+"nu apară acolo, dar sunt folosite foarte des."
+
+#: ../src/translation.c:618
+msgid ""
+"The message line below follows and echoes your key presses. If required, it "
+"changes and displays instructions for actions required from you."
+msgstr ""
+"Linia de mesaj de mai jos urmărește și reflectă apăsările de taste. Dacă "
+"este necesar, arată și instrucțiuni pentru acțiunile care trebuie "
+"întreprinse."
+
+#: ../src/translation.c:622
+msgid ""
+"Here you may practice and improve your memorization of all keys. There will "
+"be sentences presented with nonsense words which mix some numbers and "
+"symbols."
+msgstr ""
+"Aici vă puteți exersa și îmbunătăți memorarea tuturor tastelor. Vor fi "
+"prezentate propoziții cu cuvinte alandala, în care sunt amestecate unele "
+"numere și simboluri."
+
+#: ../src/translation.c:625
+msgid ""
+"In order to keep the lesson contents language and keyboard independent, "
+"accented letter combinations will probably not appear. For real word "
+"sentences, please use the fourth option of the main menu (about fluidness)."
+msgstr ""
+"Pentru a menține limba conținutului lecției și tastatura independente, "
+"combinațiile de litere accentuate probabil nu vor apărea. Pentru propoziții "
+"cu cuvinte reale, vă rugăm să utilizați cea de-a patra opțiune din meniul "
+"principal (despre fluiditate)."
+
+#: ../src/translation.c:629
+msgid ""
+"After each exercise there will be a brief statistics panel reviewing your "
+"performance along with some relevant comments."
+msgstr ""
+"După fiecare exercițiu, va afișat un panou cu statistici care vor analiza "
+"performanța obținută, împreună cu câteva comentarii relevante."
+
+#: ../src/translation.c:633
+msgid ""
+"This exercise is very similar to the second one, for adaptability. The "
+"difference is that here you'll type real words."
+msgstr ""
+"Acest exercițiu seamănă foarte mult cu cel de-al doilea, cel pentru "
+"adaptabilitate. Diferența constă în faptul că aici veți introduce cuvinte "
+"reale."
+
+#: ../src/translation.c:636
+msgid ""
+"The default language is the actual one of the interface. But you may select "
+"any other texts with words you would like to use. Press the 'Other' option "
+"above and add files containing those texts."
+msgstr ""
+"Limba implicită este cea actuală a interfeței. Dar puteți selecta orice alte "
+"texte cu cuvinte pe care doriți să le utilizați. Apăsați opțiunea „Altele” "
+"de mai sus și adăugați fișierele care conțin acele texte."
+
+#: ../src/translation.c:640
+msgid ""
+"With this exercise the focus is on speed. So, you are supposed to type "
+"really fast and I will only flatter you when you deserve it!"
+msgstr ""
+"În acest exercițiu, accentul este pus pe viteză. Deci ideea este să tastați "
+"cât mai repede posibil; te voi flata doar atunci când meriți!"
+
+#: ../src/translation.c:644
+msgid ""
+"We will now use complete sentences and paragraphs which make logical sense. "
+"This may distract you while you type if you try to understand what you are "
+"entering. The previous exercises were aimed at getting you to type without "
+"interpreting and analyzing the content."
+msgstr ""
+"Vom folosi acum propoziții și paragrafe complete care au sens logic. Acest "
+"lucru vă poate distrage atenția în timp ce tastați dacă încercați să "
+"înțelegeți ceea ce introduceți. Exercițiile anterioare au avut ca scop să vă "
+"învețe să tastați fără a interpreta și analiza conținutul."
+
+#: ../src/translation.c:648
+msgid ""
+"We do not mean to imply that the typists must behave like a robot, without "
+"understanding what they type. We do aim to develop the skill of typing, "
+"making it an automatic reflex akin to the acts of walking, talking, etc. "
+"After reaching this goal, the act of typing will become automatic and "
+"require little concentration. Then you will be able to pay attention to the "
+"real meaning of the text."
+msgstr ""
+"Nu vrem să sugerăm că dactilografele trebuie să se comporte ca un robot, "
+"fără să înțeleagă ce scriu. Ne propunem să dezvoltăm abilitatea de a tasta, "
+"transformând-o într-un reflex automat, a fel ca mersul pe jos, mersul cu "
+"bicicleta, vorbitul și așa mai departe. După atingerea acestui obiectiv, "
+"actul de tastare va deveni automat și va necesita puțină concentrare. Atunci "
+"veți putea fi atent la adevărata semnificație a textului."
+
+#: ../src/translation.c:652
+msgid ""
+"These exercises are longer. Each exercise consists of three paragraphs and "
+"the emphasis is placed on correctness and rhythm, with a minimum speed "
+"requirement. Here you will be required to use the backspace key to correct "
+"any mistakes. In other words, only input without error will be accepted."
+msgstr ""
+"Aceste exerciții sunt mai lungi. Fiecare exercițiu este format din trei "
+"paragrafe și se pune accent pe corectitudine și ritm, cu o cerință de viteză "
+"minimă. Aici vi se va cere să utilizați tasta de ștergere pentru a corecta "
+"orice greșeală. Cu alte cuvinte, va fi acceptată doar introducerea fără "
+"eroare."
+
+#: ../src/keyboard.c:1185
+msgid ""
+"Correct positioning of the hands and fingers is very important to efficient "
+"typing. You will learn faster and type better if you follow the next "
+"recommendations."
+msgstr ""
+"Poziționarea corectă a mâinilor și a degetelor este foarte importantă pentru "
+"o tastare eficientă. Veți învăța mai repede și veți scrie mai bine dacă veți "
+"urma recomandările următoare."
+
+#: ../src/keyboard.c:1188
+msgid ""
+"The index-finger tips rest over each of the two keys which have a small "
+"raised mark, in the center of the keyboard."
+msgstr ""
+"Vârfurile degetelor arătător se sprijină peste fiecare dintre cele două "
+"taste care au un mic semn în relief, în centrul tastaturii."
+
+#: ../src/keyboard.c:1191
+msgid ""
+"These marks function as 'tactile hooks' for your fingers to remain at the "
+"correct position. This way, with a little experience, you will not need to "
+"look at the keyboard to see if your fingers are properly positioned."
+msgstr ""
+"Aceste semne funcționează drept „cârlige tactile” pentru ca degetele să "
+"rămână în poziția corectă. Astfel, cu puțină experiență, nu va fi nevoie să "
+"vă uitați la tastatură pentru a vedea dacă degetele sunt poziționate corect."
+
+#: ../src/keyboard.c:1195
+msgid ""
+"The tips of the other fingers lie naturally beside the index ones, over the "
+"keys on the same row of the keyboard."
+msgstr ""
+"Vârfurile celorlalte degete se află în mod natural lângă cele arătătoare, "
+"peste tastele de pe același rând al tastaturii."
+
+#: ../src/keyboard.c:1198
+msgid "The outside edges of your thumbs rest over the space bar."
+msgstr "Marginile exterioare ale degetelor mari se sprijină pe bara de spațiu."
+
+# R=GC, scrie:
+# cred că ar fi mai corect, ca în loc de:
+# „... se sprijină pe masă ...”, să fie:
+# „... se sprijină pe suprafața mesei ...”
+# Opinii / Idei?
+#: ../src/keyboard.c:1200
+msgid ""
+"The part of the hands closest to the wrist (the base) rest over the table, "
+"outside the keyboard. Without this kind of support the arms would quickly "
+"tire."
+msgstr ""
+"Partea mâinilor cea mai apropiată de încheietura mâinii (baza) se sprijină "
+"pe masă, în afara tastaturii. Fără acest tip de sprijin brațele s-ar obosi "
+"rapid."
+
+#: ../src/keyboard.c:1203
+msgid ""
+"This is referred to as the home position for the hands. From it the fingers "
+"move all over the keyboard, reaching all the keys as naturally and quickly "
+"as possible. To reach this goal one uses a specific relation between each "
+"key and finger. This relation will be learned gradually as you complete the "
+"basic course."
+msgstr ""
+"Aceasta se numește poziția de bază pentru mâini. De la ea, degetele se "
+"deplasează pe toată tastatura, ajungând la toate tastele cât mai natural și "
+"rapid posibil. Pentru a atinge acest obiectiv se folosește o relație "
+"specifică între fiecare tastă și deget. Această relație va fi învățată "
+"treptat pe măsură ce completați cursul de bază."
+
+#: ../src/keyboard.c:1209
+msgid ""
+"When learning the relation between fingers and keys, it is very important "
+"that you only move the finger which must press the key and allow all other "
+"fingers to remain in the home position."
+msgstr ""
+"Când învățați relația dintre degete și taste, este foarte important să "
+"mutați doar degetul care trebuie să apese tasta și să mențineți toate "
+"celelalte degete în poziția de bază."
+
+#: ../src/keyboard.c:1213
+msgid ""
+"After memorizing this relationship, you can relax the previous rule some, so "
+"that you can attain greater speed while typing."
+msgstr ""
+"După ce ați memorat această relație, puteți relaxa puțin regula anterioară, "
+"astfel încât să puteți obține o viteză mai mare în timp ce tastați."
+
+#: ../src/keyboard.c:1216
+msgid ""
+"The shift keys are used for capital letters and for some symbols. To get a "
+"shifted key input you should first use the small finger of the opposite "
+"hand. Just keep it in the closest Shift while reaching the target key with "
+"the other hand."
+msgstr ""
+"Tastele Majuscule (Shift) sunt folosite pentru majuscule și pentru unele "
+"simboluri. Pentru a obține a doua semnificație a unei taste, trebuie să "
+"utilizați mai întâi degetul mic al mâinii opuse; mențineți-l pulsând tasta "
+"Majuscule cea mai apropiată, în timp ce, cu cealaltă mână, atingeți tasta "
+"dorită."
+
+#: ../src/keyboard.c:1220
+msgid ""
+"You should be prepared to start training with the basic course. It will take "
+"effort and patience to be successful as a typist. We trust you have these "
+"and look forward to your success!"
+msgstr ""
+"Ar trebui să fiți pregătit să începeți antrenamentul cu cursul de inițiere. "
+"Va fi nevoie de efort și răbdare pentru a avea succes ca dactilograf. Avem "
+"încredere că le aveți și așteptăm cu nerăbdare succesul dvs.!"
+
+#: ../src/keyboard.c:1231
+#, c-format
+msgid "Step %i"
+msgstr "Pasul %i"
+
+#. Recommendations
+#: ../src/keyboard.c:1235
+msgid "To position the hands"
+msgstr "Pentru a vă poziționa mâinile"
+
+#. Final words
+#: ../src/keyboard.c:1318
+msgid "Go ahead!"
+msgstr "Începeți!"
+
+#: ../src/keyboard.c:1326 ../src/keyboard.c:1328
+msgid "Click on any key to see which finger you must use:"
+msgstr "Apăsați orice tastă pentru a vedea ce deget trebuie să utilizați:"
+
+#: ../src/keyboard.c:1327
+msgid "Relation between fingers and keys"
+msgstr "Relația dintre degete și taste"
+
+#: ../src/keyboard.c:1385 ../src/keyboard.c:1419
+msgid "Keyboard"
+msgstr "Tastatura"
+
+#: ../src/keyboard.c:1466
+msgid "Create or modify a custom keyboard layout"
+msgstr "Creați sau modificați un aranjament de tastatură personalizat"
+
+#: ../src/keyboard.c:1714 ../src/keyboard.c:1738
+msgid "small finger"
+msgstr "degetul mic"
+
+#: ../src/keyboard.c:1717 ../src/keyboard.c:1735
+msgid "ring finger"
+msgstr "degetul inelar"
+
+#: ../src/keyboard.c:1720 ../src/keyboard.c:1732
+msgid "middle finger"
+msgstr "degetul mijlociu"
+
+#: ../src/keyboard.c:1723 ../src/keyboard.c:1729
+msgid "index finger"
+msgstr "degetul arătător"
+
+#: ../src/keyboard.c:1824
+msgid "Press and edit me"
+msgstr "Pulsați și editați-mă"
+
+#: ../src/tutor.c:325
+msgid "Lesson:"
+msgstr "_Lecția:"
+
+#: ../src/tutor.c:335
+msgid "Paragraphs:"
+msgstr "Paragrafe:"
+
+#: ../src/tutor.c:368
+msgid "Klavaro - Basic Course"
+msgstr "Klavaro - Cursul inițial"
+
+#: ../src/tutor.c:373
+msgid "Klavaro - Adaptability"
+msgstr "Klavaro - Adaptabilitate"
+
+#: ../src/tutor.c:376
+msgid ""
+"Adaptability exercises: automating the fingers responses, typing over all "
+"the keyboard."
+msgstr ""
+"Exerciții de adaptabilitate: automatizează acțiunile degetelor, tastarea pe "
+"toată tastatura."
+
+#: ../src/tutor.c:381
+msgid "Klavaro - Velocity"
+msgstr "Klavaro - Viteză"
+
+#: ../src/tutor.c:382
+msgid "Velocity exercises: accelerate typing real words."
+msgstr "Exerciții de viteză: accelerează tastarea cuvintelor."
+
+#: ../src/tutor.c:386
+msgid "Klavaro - Fluidness"
+msgstr "Klavaro - Fluiditate"
+
+# R-GC, scrie:
+# sau, ar putea să fie:
+# „Exerciții de fluiditate: tastarea cu acuratețe a paragrafelor semnificative.”
+# Opinii/Idei?
+#: ../src/tutor.c:388
+msgid "Fluidness exercises: accuracy typing good sense paragraphs."
+msgstr ""
+"Exerciții de fluiditate: acuratețea tastării prin scrierea de paragrafe "
+"semnificative."
+
+#: ../src/tutor.c:450
+msgid "End of exercise. Press [Enter] to start another."
+msgstr "Sfârșitul exercițiului. Apăsați [Enter] pentru a începe altul."
+
+#: ../src/tutor.c:478
+msgid "Learning the key positions."
+msgstr "Învățați pozițiile tastelor."
+
+#: ../src/tutor.c:481
+msgid "Press any key to start the exercise. "
+msgstr "Apăsați orice tastă pentru a începe exercițiul. "
+
+#: ../src/tutor.c:609 ../src/tutor.c:612
+msgid "Start typing when you are ready. "
+msgstr "Începeți să scrieți când sunteți pregătit. "
+
+#: ../src/tutor.c:610
+msgid "Use backspace to correct errors."
+msgstr "Utilizați tasta de ștergere pentru a corecta erorile."
+
+#: ../src/tutor.c:1057
+#, c-format
+msgid ""
+"ps.: logging not performed for this session: the number of typed characters "
+"(%i) must be greater than %i."
+msgstr ""
+"PS: nu sunt păstrate jurnalele pentru această sesiune: numărul total de "
+"caractere tastate (%i) trebuie să fie mai mare decât %i."
+
+#: ../src/tutor.c:1197
+msgid "ps.: you have entered the Top 10 list, great!"
+msgstr "PS: ați intrat în top 10, super!"
+
+#: ../src/tutor.c:1211
+msgid ""
+"ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
+"the language currently selected: we can't account for it in the 'Top 10' "
+"contest."
+msgstr ""
+"PS: textul pe care l-ați introdus nu seamănă cu textele standard din limba "
+"selectată în prezent: nu îl putem lua în considerare pentru concursul „Top "
+"10”"
+
+#. Begin the accuracy
+#: ../src/tutor.c:1256
+msgid "STATISTICS"
+msgstr "STATISTICI"
+
+#: ../src/tutor.c:1257
+msgid "Elapsed time:"
+msgstr "Timpul trecut:"
+
+#: ../src/tutor.c:1258
+msgid "minute and"
+msgid_plural "minutes and"
+msgstr[0] "un minut și"
+msgstr[1] "două minute și"
+msgstr[2] "minute și"
+msgstr[3] "de minute și"
+
+#: ../src/tutor.c:1259
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "o secundă"
+msgstr[1] "două secunde"
+msgstr[2] "secunde"
+msgstr[3] "de secunde"
+
+#: ../src/tutor.c:1260
+msgid "Error ratio:"
+msgstr "Rata de eroare:"
+
+#: ../src/tutor.c:1260
+msgid "Accuracy:"
+msgstr "Acuratețe:"
+
+#: ../src/tutor.c:1281 ../src/tutor.c:1306 ../src/tutor.c:1329
+#: ../src/tutor.c:1355
+msgid "Goal:"
+msgstr "Obiectiv:"
+
+#: ../src/tutor.c:1288
+msgid "Characters per second:"
+msgstr "Caractere pe secundă:"
+
+#: ../src/tutor.c:1306
+msgid "(CPS)"
+msgstr "(CPS)"
+
+#: ../src/tutor.c:1311
+msgid "Words per minute:"
+msgstr "Cuvinte pe minut:"
+
+#: ../src/tutor.c:1336
+msgid "Fluidness:"
+msgstr "Fluiditate:"
+
+#: ../src/tutor.c:1363
+msgid "Comments:"
+msgstr "Comentarii:"
+
+#: ../src/tutor.c:1841
+msgid "space"
+msgstr "spațiu"
+
+#. Translators: the name of letter Y
+#: ../src/tutor.c:1846
+msgid "wye"
+msgstr "i-grec"
+
+#. Translators: the name of the Return key
+#: ../src/tutor.c:1850
+msgid "enter"
+msgstr "intro"
+
+#: ../src/tutor.c:1856
+msgid "apostrophe"
+msgstr "apostrof"
+
+#. Translators: double quote symbol: "
+#: ../src/tutor.c:1860
+msgid "quote"
+msgstr "ghilimele duble, drepte"
+
+#. Translators: ampersand symbol: &
+#: ../src/tutor.c:1864
+msgid "ampersand"
+msgstr "„și” - comercial"
+
+#. Error frequencies or touch times
+#.
+#: ../src/plot.c:318
+msgid "Character"
+msgstr "Caracter"
+
+#: ../src/plot.c:330
+msgid "Date & Time"
+msgstr "Data și ora"
+
+#: ../src/basic.c:278
+msgid ""
+"This custom lesson is empty. You can define two or more different characters "
+"to generate a personal practice. Press the editting button in the upper-"
+"right corner."
+msgstr ""
+"Această lecție personalizabilă este goală. Puteți defini două sau mai multe "
+"caractere diferite pentru a genera un exercițiu personal. Apăsați butonul de "
+"editare din colțul din dreapta sus."
+
+#: ../src/basic.c:387
+msgid "Positions of keys seems to be learned!"
+msgstr "Se pare că pozițiile tastelor au fost învățate!"
+
+#: ../src/basic.c:388
+msgid ""
+" Congratulations!\n"
+" You have accomplished the entire basic course.\n"
+" Go to the next type of exercise: adaptability.\n"
+" There you will practice mainly the accuracy.\n"
+msgstr ""
+" Felicitări!\n"
+" Ați realizat întregul curs introductiv.\n"
+" Treceți la următorul tip de exercițiu: Adaptabilitate.\n"
+" Acolo veți exersa mai ales acuratețea.\n"
+
+#: ../src/basic.c:394
+msgid ""
+" All right, now you got it!\n"
+" Go to the next lesson.\n"
+msgstr ""
+" În regulă, acum ai înțeles!\n"
+" Treceți la lecția următoare.\n"
+
+#: ../src/adaptability.c:251
+#, c-format
+msgid ""
+" Your accuracy rate is below %.0f%%...\n"
+" Could you please try again to improve it?\n"
+msgstr ""
+" Rata de acuratețe este sub %.0f%%...\n"
+" Doriți să încercați din nou, ca să o îmbunătățiți?\n"
+
+#: ../src/adaptability.c:254
+#, c-format
+msgid ""
+" You are doing well. But...\n"
+" Could you make the accuracy reach %.0f%%?\n"
+msgstr ""
+" Vă descurcați bine. Dar...\n"
+" Ați putea face ca acuratețea să ajungă la %.0f%%?\n"
+
+#: ../src/adaptability.c:257
+#, c-format
+msgid ""
+" You are almost there, but your accuracy rate is still below %.0f%%.\n"
+" Try a few more times, or maybe you're getting upset, so go to another kind "
+"of exercise.\n"
+msgstr ""
+" Sunteți foarte aproape, dar rata de acuratețe este încă sub %.0f%%.\n"
+" Încercați încă de câteva ori sau, dacă v-ați săturat, încercați un alt tip "
+"de exercițiu.\n"
+
+#: ../src/adaptability.c:264
+#, c-format
+msgid ""
+" Very good!\n"
+" You succeeded with an accuracy rate above %.0f%%.\n"
+" Now it is time to increase your velocity.\n"
+" Go to the 3rd exercise at the main menu.\n"
+msgstr ""
+" Foarte bine!\n"
+" Ați reușit cu o rată de acuratețe de peste %.0f%%.\n"
+" Acum este timpul să vă măriți viteza.\n"
+" Accesați cel de-al treilea exercițiu din meniul principal.\n"
+
+#: ../src/velocity.c:337 ../src/fluidness.c:440
+msgid "Pasted_or_dropped"
+msgstr "Lipit_sau_târât"
+
+#: ../src/velocity.c:448
+msgid ""
+" You are just beginning.\n"
+" Be patient, try it again every day, rest and don't worry so much:\n"
+" persistence and practice will improve your velocity.\n"
+msgstr ""
+" Abia ați început.\n"
+" Aveți răbdare, încercați din nou în fiecare zi, odihniți-vă și nu vă "
+"faceți\n"
+" prea multe griji: perseverența și practica vă vor îmbunătăți viteza.\n"
+
+#: ../src/velocity.c:452
+#, c-format
+msgid ""
+" Still away from the highway. You can do better...\n"
+" Try to reach at least %.0f WPM.\n"
+msgstr ""
+" Încă sunteți departe de a fi cel mai bun. Puteți s-o faceți mai bine ...\n"
+" Încercați să ajungeți măcar la %.0f de Cuv/Min.\n"
+
+#: ../src/velocity.c:455
+#, c-format
+msgid ""
+" You are doing well, but need to go faster.\n"
+" And don't forget the accuracy. Try to get %.0f WPM.\n"
+msgstr ""
+" Vă descurcați bine, dar trebuie să mișcați mai repede.\n"
+" Și nu uitați de acuratețe. Încercați să obțineți %.0f de Cuv/Min.\n"
+
+# R-GC, scrie:
+# e posibil ca traducerea corectă pentru „Fine”,
+# să fie: 1. „Bun...” sau 2. „În regulă.”
+# De moment rămîne așa, să vedem cum se
+# prezintă în contextul real(cînd se rulează
+# programul)
+#: ../src/velocity.c:458
+#, c-format
+msgid ""
+" Fine. Now you need to start running.\n"
+" Can you reach %.0f WPM?\n"
+msgstr ""
+" Bine. Acum trebuie să începeți să alergați.\n"
+" Puteți ajunge la %.0f de Cuv/Min?\n"
+
+#: ../src/velocity.c:461
+#, c-format
+msgid ""
+" Very good. You are almost there.\n"
+" Can you finally reach %.0f WPM?\n"
+msgstr ""
+" Foarte bine. Încă puțin și gata.\n"
+" Puteți ajunge în sfârșit la %.0f de Cuv/Min?\n"
+
+#: ../src/velocity.c:464
+msgid ""
+" Excellent. For this course, that is enough.\n"
+" Try now the fluidness exercises, OK?\n"
+msgstr ""
+" Excelent. Pentru acest curs, este suficient.\n"
+" Încercați acum exercițiile de fluiditate, bine?\n"
+
+# R-GC, scrie:
+# „Dacă da, încercați să obțineți ... !”,
+# ar putea fi:
+# „Atunci, încercați să obțineți ... !”
+# Opinii /Idei ?
+#: ../src/velocity.c:467
+#, c-format
+msgid ""
+" Fast! Are you a professional?\n"
+" So, try to get %.0f WPM!\n"
+msgstr ""
+" Rapid! Te antrenezi pentru un concurs?\n"
+" Dacă da, încercați să obțineți %.0f de Cuv/Min!\n"
+
+#. Translators: Speed Racer is a reference to a Japanese anime franchise
+#. about automobile racing, also known as Mach GoGoGo.
+#: ../src/velocity.c:472
+#, c-format
+msgid " Ranking good, Speed Racer! Are you afraid of reaching %.0f WPM?\n"
+msgstr ""
+" Ai obținut un bun punctaj, monstru de curse! Și... ți-ar fi frică să atingi "
+"%.0f de Cuv/Min?\n"
+
+#. Translators: feel free to change the reference to that martial art, if you find another good analogy.
+#: ../src/velocity.c:476
+#, c-format
+msgid ""
+" Kung-fu mastery!\n"
+" Can you fly at %.0f WPM?\n"
+msgstr ""
+" Maestru Kung-Fu!\n"
+" Ați putea zbura la %.0f de Cuv/Min?\n"
+
+#. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
+#: ../src/velocity.c:479
+msgid ""
+" Dvorak master!\n"
+" I have no words to express my admiration!\n"
+msgstr ""
+" Maestru Dvorak!\n"
+" Nu am cuvinte să-mi exprim admirația!\n"
+
+#: ../src/fluidness.c:543
+#, c-format
+msgid ""
+" You type accurately but not so fast.\n"
+" Can you reach %.0f WPM?\n"
+msgstr ""
+" Scrieți cu acuratețe, dar nu foarte repede.\n"
+"he\n"
+" Puteți ajunge la % 0f de Cuv/Min?\n"
+
+#: ../src/fluidness.c:546
+#, c-format
+msgid ""
+" Your rhythm is not so constant. Calm down.\n"
+" For now, try to make the fluidness greater than %i%%.\n"
+msgstr ""
+" Nu tastați cu o viteză constantă. Calmați-vă.\n"
+"De moment, încercați să obțineți o fluență de tastare mai mare de %i%%.\n"
+
+#: ../src/fluidness.c:549
+#, c-format
+msgid ""
+" You are almost getting there. Type more fluently.\n"
+" I want a fluidness greater than %.0f%%.\n"
+msgstr ""
+" Aproape că ați atins acest obiectiv. Tastați mai fluent.\n"
+"Vreau o fluiditate mai mare de %.0f%%.\n"
+
+#: ../src/fluidness.c:552
+msgid ""
+" Congratulations!\n"
+" It seems to me that you are a professional.\n"
+" You don't need this program (me) anymore.\n"
+" Hope you have enjoyed. Thanks and be happy!\n"
+msgstr ""
+" Felicitări!\n"
+"Se pare că sunteți un profesionist.\n"
+"Nu mai aveți nevoie de acest program (de mine).\n"
+"Sper că v-ați distrat. Mulțumesc, și fii bucuros!\n"
+
+#: ../src/fluidness.c:557
+msgid ""
+" How can you type so fast?\n"
+" You have exceeded all my expectations.\n"
+" Are you a machine? Could you teach me?\n"
+" I can not help you anymore. Go to an expert!\n"
+msgstr ""
+" Cum puteți să tastați așa de rapid?\n"
+"Mi-ați depășit toate așteptările.\n"
+"Sunteți o mașină? Mă puteți învăța și pe mine?\n"
+"Nu vă mai pot ajuta. Mergeți la un expert!\n"
+
+#: ../src/top10.c:72
+msgid "Name"
+msgstr "Nume"
+
+#: ../src/top10.c:98
+msgid "Chars"
+msgstr "Caractere"
+
+#: ../src/top10.c:100
+msgid "When"
+msgstr "Când"
+
+# R-GC, scrie:
+# după revizarea fișierului, DȘ spune:
+# msgstr "Punctuații locale"
+# → aici și celealte șiruri cu „score” cred că ar trebui traduse cu „punctaj”
+# ****
+# Ok, mi se pare o idee bună;
+# corecție aplicată, și la „vînat”
+# «score»!
+#: ../src/top10.c:129
+msgid "Local scores"
+msgstr "Punctaje locale"
+
+#: ../src/top10.c:130
+msgid "External scores"
+msgstr "Punctaje externe"
+
+#: ../src/top10.c:717
+msgid "Empty ranking. Please practice fluidness."
+msgstr "Scor gol. Practicați fluiditatea."
+
+#: ../src/top10.c:814
+msgid "Not able to download files"
+msgstr "Nu s-au putut descărca fișiere"
+
+#: ../src/top10.c:814 ../src/top10.c:906
+msgid "not found"
+msgstr "negăsit"
+
+#: ../src/top10.c:815 ../src/top10.c:907
+msgid "Are you sure you have it installed in your system?"
+msgstr "Sigur îl aveți instalat în sistem?"
+
+#: ../src/top10.c:861
+msgid "Could not download file from the host server."
+msgstr "Nu s-a putut descărca fișierul de pe serverul gazdă."
+
+#: ../src/top10.c:906
+msgid "Not able to upload files"
+msgstr "Nu s-a putut încărca fișiere"
+
+#: ../src/top10.c:993
+msgid "Could not upload/download scores."
+msgstr "Nu s-au putut încărca/descărca punctajele."

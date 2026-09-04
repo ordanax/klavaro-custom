@@ -1,0 +1,1269 @@
+# Indonesian translations for Klavaro.
+# Copyright (C) 2018 Free Software Foundation, Inc.
+# This file is distributed under the same license as the klavaro package.
+# Antonius Blantran de Rozari <derozari@gmail.com>, 2018.
+msgid ""
+msgstr ""
+"Project-Id-Version: klavaro 3.12\n"
+"Report-Msgid-Bugs-To: <translation-team-eo@lists.sourceforge.net>\n"
+"POT-Creation-Date: 2022-11-24 19:17-0300\n"
+"PO-Revision-Date: 2021-11-11 23:08+0700\n"
+"Last-Translator: Andika Triwidada <andika@gmail.com>\n"
+"Language-Team: Indonesian <translation-team-id@lists.sourceforge.net>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Bugs: Report translation errors to the Language-Team address.\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-KeywordsList: label;title;translatable;property\n"
+"X-Poedit-Basepath: klavaro\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: ../data/klavaro.glade.h:1
+msgid "Klavaro - Progress"
+msgstr "Klavaro - Kemajuan"
+
+#: ../data/klavaro.glade.h:2
+msgid "_Lesson:"
+msgstr "_Latihan:"
+
+#: ../data/klavaro.glade.h:3
+msgid "Value"
+msgstr "Nilai"
+
+#: ../data/klavaro.glade.h:4
+msgid "Clear progress data."
+msgstr "Hapus data kemajuan."
+
+#: ../data/klavaro.glade.h:5
+msgid "_Reset"
+msgstr "_Reset"
+
+#: ../data/klavaro.glade.h:6
+msgid "Close this window, returning to the exercise."
+msgstr "Tutup jendela ini, kembali ke latihan."
+
+#: ../data/klavaro.glade.h:7
+msgid "_Close"
+msgstr "_Tutup"
+
+#. Everything means ALL the progress charts statistics.
+#: ../data/klavaro.glade.h:9
+msgid "everything!"
+msgstr "semuanya!"
+
+#. Confirmation check-button for removing data.
+#: ../data/klavaro.glade.h:11
+msgid "Clear data for every module, if checked!"
+msgstr "Hapus data untuk setiap modul, bila dicentang!"
+
+#: ../data/klavaro.glade.h:12
+msgid "Load other exercises/lessons"
+msgstr "Muat latihan/pelajaran yang lain"
+
+#: ../data/klavaro.glade.h:13
+msgid "_Other texts"
+msgstr "_Naskah lainnya"
+
+#: ../data/klavaro.glade.h:14
+msgid "Edit the character set to be used in this lesson."
+msgstr "Ubah himpunan karakter untuk digunakan dalam latihan ini."
+
+#: ../data/klavaro.glade.h:15
+msgid "This is a specific exercise, adjusted to your error profile."
+msgstr ""
+"Ini adalah sebuah latihan khusus, yang disesuaikan dengan profil kesalahan "
+"anda ."
+
+#: ../data/klavaro.glade.h:16
+msgid ""
+"Edit the character set to be used in lessons after 43: they are customizable!"
+msgstr ""
+"Ubah himpunan karakter untuk digunakan setelah latihan 43: Karakter-karakter "
+"ini dapat disesuaikan!"
+
+#: ../data/klavaro.glade.h:17 ../src/tutor.c:401
+msgid "Drag and drop text here to practice with it."
+msgstr "Seret dan jatuhkan teks di sini untuk berlatih dengannya."
+
+#: ../data/klavaro.glade.h:18
+msgid "Press here to restart the exercise. Hotkey: [Ctrl-R]"
+msgstr "Tekan di sini untuk mengulang latihan. Tombol: [Ctrl-R]"
+
+#: ../data/klavaro.glade.h:19
+msgid "Show the virtual keyboard and the relation between fingers and keys."
+msgstr ""
+"Tampilkan papan ketik virtual dan relasi antara jari jemari dengan huruf."
+
+#: ../data/klavaro.glade.h:20
+msgid "_Keyboard"
+msgstr "Papan _Ketik"
+
+#: ../data/klavaro.glade.h:21
+msgid "Select the font to be used in the exercise window."
+msgstr "Pilih jenis huruf yang akan digunakan dalam jendela latihan."
+
+#: ../data/klavaro.glade.h:22
+msgid "Font definition"
+msgstr "Definisi jenis huruf"
+
+#: ../data/klavaro.glade.h:23
+msgid "Alternative color scheme, needs restart!"
+msgstr "Skema warna alternatif, perlu dimulai ulang!"
+
+#: ../data/klavaro.glade.h:24
+msgid "Co_urse information"
+msgstr "Informasi mengenai kursus"
+
+#: ../data/klavaro.glade.h:25
+msgid "Charts showing the learning progress along the exercises."
+msgstr "Grafik yang menunjukkan prestasi latihan sampai saat ini."
+
+#: ../data/klavaro.glade.h:26
+msgid "_Progress"
+msgstr "_Kemajuan"
+
+#: ../data/klavaro.glade.h:27
+msgid "Exit the application immediately."
+msgstr "Keluar dari aplikasi ini."
+
+#: ../data/klavaro.glade.h:28
+msgid "Return to the main menu."
+msgstr "Kembali ke menu utama."
+
+#: ../data/klavaro.glade.h:29
+msgid "B_ack to menu"
+msgstr "Kembali ke menu"
+
+#: ../data/klavaro.glade.h:30
+msgid "Show local and external scores from other users."
+msgstr "Tampilkan nilai para peserta lain."
+
+#: ../data/klavaro.glade.h:31
+msgid "_Top 10"
+msgstr "10 _terbaik"
+
+#: ../data/klavaro.glade.h:32
+msgid "Change language"
+msgstr "Ubah Pilihan Bahasa"
+
+#: ../data/klavaro.glade.h:33
+msgid "Attention!"
+msgstr "Perhatian!"
+
+#: ../data/klavaro.glade.h:34
+msgid "Do you confirm?"
+msgstr "Apakah anda yakin?"
+
+#: ../data/klavaro.glade.h:35
+msgid "_No"
+msgstr "_Tidak"
+
+#: ../data/klavaro.glade.h:36
+msgid "_Yes"
+msgstr "_Ya"
+
+#: ../data/klavaro.glade.h:37
+msgid "Klavaro - Select file"
+msgstr "Klavaro - Pilih berkas"
+
+#: ../data/klavaro.glade.h:38
+msgid "_Cancel"
+msgstr "_Batal"
+
+#: ../data/klavaro.glade.h:39
+msgid "_Open"
+msgstr "_Buka"
+
+#: ../data/klavaro.glade.h:40
+msgid "Re_name:"
+msgstr "Ubah _nama:"
+
+#: ../data/klavaro.glade.h:41
+msgid "Rename the selected item."
+msgstr "Ubah item terpilih."
+
+#: ../data/klavaro.glade.h:42
+msgid ""
+"Read a text file and add a copy of it here. The file must be encoded in "
+"UTF-8."
+msgstr "Baca berkas teks and salin di sini. Berkas harus dalam format UTF-8."
+
+#: ../data/klavaro.glade.h:43
+msgid "_Open text file"
+msgstr "_Buka berkas teks"
+
+#: ../data/klavaro.glade.h:44
+msgid "Paste text that was copied to the clipboard."
+msgstr "Tempelkan teks yang tersalin pada papan klip."
+
+#: ../data/klavaro.glade.h:45
+msgid "_Paste from clipboard"
+msgstr "Tem_pel dari papan klip"
+
+#: ../data/klavaro.glade.h:46
+msgid "Remove the selected item."
+msgstr "Hapus item terpilih."
+
+#: ../data/klavaro.glade.h:47
+msgid "_Remove copied file"
+msgstr "Hapus be_rkas tersalin"
+
+#: ../data/klavaro.glade.h:48
+msgid "Apply the selected item to create an exercise."
+msgstr "Gunakan item terpilih untuk membuat latihan."
+
+#: ../data/klavaro.glade.h:49
+msgid "_Apply"
+msgstr "Ter_apkan"
+
+#: ../data/klavaro.glade.h:50
+msgid "Close this window."
+msgstr "Tutup jendela ini."
+
+#: ../data/klavaro.glade.h:51
+msgid "Country / Custom"
+msgstr "Negara / Personal"
+
+#: ../data/klavaro.glade.h:52
+msgid "Variant"
+msgstr "Varian"
+
+#: ../data/klavaro.glade.h:53
+msgid "Remove the selected custom layout."
+msgstr "Hapus tata letak personal yang terpilih."
+
+#: ../data/klavaro.glade.h:54
+msgid "_Remove"
+msgstr "_Hapus"
+
+#: ../data/klavaro.glade.h:55
+msgid ""
+"Toggles the shift effect on the keys. Alternates between the upper and lower "
+"characters of the keys."
+msgstr "Beralih antara huruf besar dan kecil pada tombol."
+
+#: ../data/klavaro.glade.h:56
+msgid "SPACE BAR"
+msgstr "SPASI"
+
+#: ../data/klavaro.glade.h:57 ../src/keyboard.c:1726
+msgid "thumbs"
+msgstr "jempol"
+
+#: ../data/klavaro.glade.h:58
+msgid "Tab"
+msgstr "Tab"
+
+#: ../data/klavaro.glade.h:59
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: ../data/klavaro.glade.h:60
+msgid "Caps"
+msgstr "Caps"
+
+#: ../data/klavaro.glade.h:61
+msgid "S_ave as:"
+msgstr "Simp_an sebagai:"
+
+#: ../data/klavaro.glade.h:62
+msgid "Show previous screen."
+msgstr "Tampilkan layar sebelumnya."
+
+#: ../data/klavaro.glade.h:63
+msgid "_Previous step"
+msgstr "Langkah Se_belumnya"
+
+#: ../data/klavaro.glade.h:64
+msgid "Show next screen."
+msgstr "Tampilkan layar berikutnya."
+
+#: ../data/klavaro.glade.h:65
+msgid "_Next step"
+msgstr "Langkah _Selanjutnya"
+
+#: ../data/klavaro.glade.h:66
+msgid "Return without any modification."
+msgstr "Kembali tanpa ada modifikasi."
+
+#: ../data/klavaro.glade.h:67
+msgid "Save the current keyboard layout with the name specified above."
+msgstr "Simpan tata letak papan ketik dengan nama di atas."
+
+#: ../data/klavaro.glade.h:68
+msgid "_Save and use"
+msgstr "_Simpan dan gunakan"
+
+#: ../data/klavaro.glade.h:69
+msgid ""
+"If you like those beautiful hands, click here to close this window keeping "
+"them."
+msgstr ""
+"Jika anda menyukai tangan yang indah tersebut, klik di sini untuk menutup "
+"jendela ini."
+
+#: ../data/klavaro.glade.h:70
+msgid "_Keep hands"
+msgstr "_Pertahankan posisi tangan"
+
+#: ../data/klavaro.glade.h:71
+msgid "Klavaro - Main menu"
+msgstr "Klavaro - Menu utama"
+
+#: ../data/klavaro.glade.h:72
+msgid "Don't be shy about learning the basics!"
+msgstr "Anda tidak perlu malu mempelajari dasar-dasar mengetik !"
+
+#: ../data/klavaro.glade.h:73
+msgid "Learn how to type correctly"
+msgstr "Belajar mengetik dengan benar"
+
+#: ../data/klavaro.glade.h:74
+msgid "Initial training for your fingers."
+msgstr "Latihan awal untuk jari-jari anda."
+
+#: ../data/klavaro.glade.h:75
+msgid "First steps with initial training"
+msgstr "Langkah pertama dengan latihan awal"
+
+#: ../data/klavaro.glade.h:76
+msgid "Memorizing the keyboard practicing random keys exercises."
+msgstr "Menghafal tata letak papan ketik dengan berlatih tombol secara acak."
+
+#: ../data/klavaro.glade.h:77
+msgid "Practice with random keys"
+msgstr "Berlatih dengan tombol acak"
+
+#: ../data/klavaro.glade.h:78
+msgid "Accelerating the touches practicing random words exercises."
+msgstr "Mempercepat ketikan dengan berlatih menggunakan kata-kata acak."
+
+#: ../data/klavaro.glade.h:79
+msgid "Practice with random words"
+msgstr "Berlatih dengan kata-kata acak"
+
+#: ../data/klavaro.glade.h:80
+msgid "Becoming proficient practicing complete paragraphs exercises."
+msgstr "Menjadi mahir melalui latihan dengan paragraf lengkap."
+
+#: ../data/klavaro.glade.h:81
+msgid "Practice with complete texts"
+msgstr "Berlatih dengan naskah lengkap"
+
+#: ../data/klavaro.glade.h:82
+msgid "Speech"
+msgstr "Dikte"
+
+#: ../data/klavaro.glade.h:83
+msgid "Your language here."
+msgstr "Bahasa Anda."
+
+#: ../data/klavaro.glade.h:84
+msgid ""
+"Keyboard layout for modules 1 and 2. Also used informatively in the "
+"fluidness contest."
+msgstr ""
+"Tata letak papan ketik untuk modul 1 dan 2. Juga digunakan secara informatif "
+"dalam kontes kecepatan."
+
+#: ../data/klavaro.glade.h:85
+msgid "_Keyboard:"
+msgstr "Papan _Ketik:"
+
+#: ../data/klavaro.glade.h:86
+msgid "Language for modules 3 and 4."
+msgstr "Bahasa untuk modul 3 dan 4."
+
+#: ../data/klavaro.glade.h:87
+msgid "_Language:"
+msgstr "_Bahasa:"
+
+#: ../data/klavaro.glade.h:88
+msgid "General information about the program."
+msgstr "Informasi umum tentang aplikasi."
+
+#: ../data/klavaro.glade.h:89
+msgid "_About..."
+msgstr "Tent_ang Aplikasi…"
+
+#: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
+msgid "Yet another touch typing tutor"
+msgstr "Sebuah tutorial mengetik"
+
+#: ../data/klavaro.glade.h:91
+msgid "Remember always: someone loves you!"
+msgstr "Ingatlah selalu: seseorang mencintaimu!"
+
+#: ../data/klavaro.glade.h:92
+msgid "Top 10"
+msgstr "10 terbaik"
+
+#: ../data/klavaro.glade.h:93
+msgid "Show extra information."
+msgstr "Tampilkan informasi tambahan."
+
+#: ../data/klavaro.glade.h:94
+msgid "Hide extra information."
+msgstr "Sembunyikan informasi tambahan."
+
+#: ../data/klavaro.glade.h:95
+msgid "Publish to the web your local scores."
+msgstr "Publikasikan ke WEB nilai anda."
+
+#: ../data/klavaro.glade.h:96
+msgid "_Participate"
+msgstr "_Berpartisipasi"
+
+#: ../data/klavaro.glade.h:97
+msgid "Download from the web the most up to date ranking."
+msgstr "Unduh dari situs web urutan ranking termutakhir."
+
+#: ../data/klavaro.glade.h:98
+msgid "_Update"
+msgstr "Perbahar_ui"
+
+#: ../data/klavaro.desktop.in.h:1
+msgid "Klavaro"
+msgstr "Klavaro"
+
+#: ../data/klavaro.desktop.in.h:3
+msgid "A very flexible and efficient touch typing tutor."
+msgstr "Tutorial mengetik yang sangat fleksibel dan efisien."
+
+#: ../src/main.c:308
+msgid "(Custom)"
+msgstr "(Personifikasi)"
+
+#: ../src/main.c:309
+msgid "(Edit custom)"
+msgstr "(Ubah parameter personifikasi)"
+
+#: ../src/main.c:310
+msgid "(Default)"
+msgstr "(Baku)"
+
+#: ../src/main.c:387
+#, c-format
+msgid "Dictation mode (depends on this speech synthesizer: %s)"
+msgid_plural "Dictation mode (depends on one of these speech synthesizers: %s)"
+msgstr[0] "Mode dikte (bergantung pada syntheziser percakapan ini: %s)"
+
+#. Set main labels (for translation)
+#.
+#: ../src/main.c:429 ../src/keyboard.c:1385
+msgid "Introduction"
+msgstr "Introduksi"
+
+#: ../src/main.c:432 ../src/top10.c:114
+msgid "Basic course"
+msgstr "Kursus Dasar"
+
+#: ../src/main.c:435 ../src/top10.c:117
+msgid "Adaptability"
+msgstr "Kemampuan Beradaptasi"
+
+#: ../src/main.c:439 ../src/main.c:441 ../src/callbacks.c:1406
+#: ../src/top10.c:94 ../src/top10.c:120
+msgid "Speed"
+msgstr "Kecepatan"
+
+#: ../src/main.c:444 ../src/callbacks.c:1429 ../src/top10.c:96
+#: ../src/top10.c:123
+msgid "Fluidity"
+msgstr "Kemahiran"
+
+#: ../src/callbacks.c:485 ../src/tutor.c:547
+msgid "Keys:"
+msgstr "Tombol :"
+
+#: ../src/callbacks.c:880 ../src/callbacks.c:896
+msgid "Connecting..."
+msgstr "Menjalankan koneksi..."
+
+#: ../src/callbacks.c:1169
+msgid "Overwrite user layout"
+msgstr "Timpa tata letak pengguna"
+
+#: ../src/callbacks.c:1171
+msgid "This will OVERWRITE an existent keyboard layout."
+msgstr "Ini akan menimpa tata letak papan ketik yang ada."
+
+#: ../src/callbacks.c:1178
+msgid "Remove user layout"
+msgstr "Hapus tata letak pengguna"
+
+#: ../src/callbacks.c:1180
+msgid "This will REMOVE an existent keyboard layout."
+msgstr "Ini akan menghapus tata letak papan ketik yang ada saat ini."
+
+#: ../src/callbacks.c:1187 ../src/callbacks.c:1192
+msgid "Reset progress data"
+msgstr "Hapus dan mulai data kemajuan yang baru"
+
+#: ../src/callbacks.c:1188
+msgid "This will DELETE all the progress data of all modules."
+msgstr "Ini akan MENGHAPUS seluruh data kemajuan dari semua modul."
+
+#: ../src/callbacks.c:1200
+#, c-format
+msgid "This will delete the data of this chart. <%s>"
+msgstr "Ini akan menghapus data grafik ini. <%s>"
+
+#: ../src/callbacks.c:1203
+#, c-format
+msgid "This will delete the progress data of the module. (%s)"
+msgstr "Ini akan menghapus data kemajuan modul. (%s)"
+
+#: ../src/callbacks.c:1403 ../src/top10.c:92
+msgid "Accuracy"
+msgstr "Akurasi"
+
+#: ../src/callbacks.c:1406 ../src/tutor.c:1329
+msgid "(WPM)"
+msgstr "(KPM)"
+
+#: ../src/callbacks.c:1417
+msgid "Errors"
+msgstr "Galat (Kesalahan)"
+
+#: ../src/callbacks.c:1420
+msgid "Touch times (s)"
+msgstr "Durasi"
+
+#: ../src/callbacks.c:1432 ../src/tutor.c:1356 ../src/top10.c:74
+msgid "Score"
+msgstr "Nilai"
+
+#. Translators: your language code (first 2 letters of your po-file)
+#: ../src/translation.c:524 ../src/tutor.c:1762
+msgid "en"
+msgstr "id"
+
+#: ../src/translation.c:611
+msgid ""
+"The basic course focuses on having you read the characters presented to you "
+"on screen and typing the corresponding keys. Remember to keep your hands "
+"correctly oriented on the home row of the keyboard at all times (see "
+"introduction on main menu)."
+msgstr ""
+"Kursus Dasar berfokus agar anda membaca karakter yang ada di layar dan "
+"menekan tombol yang tepat. Ingat anda harus senantiasa menjaga tangan dan "
+"jemari anda pada orientasi yang benar di baris utama papan ketik (lihat menu "
+"introduksi di menu utama)."
+
+#: ../src/translation.c:615
+msgid ""
+"The key set used in each series will be shown in the above message line. The "
+"[Space], [Shift] and [Enter] keys may not show up there but are used very "
+"often."
+msgstr ""
+"Kumpulan tombol yang digunakan dalam setiap seri akan ditampilkan di baris "
+"di atas. Tombol Spasi [Space], [Shift] dan [Enter] mungkin tidak akan "
+"ditampilkan di atas, walaupun tombol-tombol tersebut seringkali digunakan."
+
+#: ../src/translation.c:618
+msgid ""
+"The message line below follows and echoes your key presses. If required, it "
+"changes and displays instructions for actions required from you."
+msgstr ""
+"Baris di bawah ini mengikuti dan menampilkan tombol yang anda tekan. Jika "
+"diperlukan baris tersebut akan menampilkan instruksi yang perlu anda lakukan."
+
+#: ../src/translation.c:622
+msgid ""
+"Here you may practice and improve your memorization of all keys. There will "
+"be sentences presented with nonsense words which mix some numbers and "
+"symbols."
+msgstr ""
+"Di sini anda bisa berlatih dan meningkatkan daya ingat anda akan letak "
+"tombol-tombol. Akan ada sejumlah kalimat menggunakan kata-kata sembarang "
+"yang memadukan angka dan simbol."
+
+#: ../src/translation.c:625
+msgid ""
+"In order to keep the lesson contents language and keyboard independent, "
+"accented letter combinations will probably not appear. For real word "
+"sentences, please use the fourth option of the main menu (about fluidness)."
+msgstr ""
+"Agar latihan tidak bergantung pada jenis bahasa dan papan ketik yang "
+"digunakan, kombinasi huruf beraksentuasi tidak akan ditampilkan. Untuk "
+"keperluan tersebut silahkan mempergunakan pilihan keempat dari menu utama "
+"(tentang Kecepatan)."
+
+#: ../src/translation.c:629
+msgid ""
+"After each exercise there will be a brief statistics panel reviewing your "
+"performance along with some relevant comments."
+msgstr ""
+"Di akhir setiap latihan akan ada statistik singkat yang mengulas performansi "
+"anda dan disertai komentar."
+
+#: ../src/translation.c:633
+msgid ""
+"This exercise is very similar to the second one, for adaptability. The "
+"difference is that here you'll type real words."
+msgstr ""
+"Latihan ini sangat mirip dengan latihan yang kedua, untuk adaptasi."
+"Perbedaannya dalam latihan ini anda mengetik kata-kata yang riil."
+
+#: ../src/translation.c:636
+msgid ""
+"The default language is the actual one of the interface. But you may select "
+"any other texts with words you would like to use. Press the 'Other' option "
+"above and add files containing those texts."
+msgstr ""
+"Bahasa yang digunakan saat ini adalah yang ada pada antarmuka. Tapi anda "
+"bisa memilih teks yang lain dengan kata-kata yang anda ingin gunakan. Tekan "
+"opsi 'Naskah lainnya' di atas dan tambahkan berkas yang memuat teks tersebut."
+
+#: ../src/translation.c:640
+msgid ""
+"With this exercise the focus is on speed. So, you are supposed to type "
+"really fast and I will only flatter you when you deserve it!"
+msgstr ""
+"Latihan ini berfokus pada kecepatan. Anda diharapkan mengetik secepat "
+"mungkin. Penghargaan akan diberikan apabila anda pantas mendapatkannya!"
+
+#: ../src/translation.c:644
+msgid ""
+"We will now use complete sentences and paragraphs which make logical sense. "
+"This may distract you while you type if you try to understand what you are "
+"entering. The previous exercises were aimed at getting you to type without "
+"interpreting and analyzing the content."
+msgstr ""
+"Sekarang kita akan menggunakan kalimat dan paragraf yang lengkap dan "
+"bermakna. Ini mungkin akan menyulitkan anda pada saat anda mengetik karena "
+"anda berusaha memahami isi atau makna teks yang anda ketik. Latihan-latihan "
+"sebelumnya bertujuan agar anda mengetik tanpa perlu memahami dan menganalisa "
+"isinya."
+
+#: ../src/translation.c:648
+msgid ""
+"We do not mean to imply that the typists must behave like a robot, without "
+"understanding what they type. We do aim to develop the skill of typing, "
+"making it an automatic reflex akin to the acts of walking, talking, etc. "
+"After reaching this goal, the act of typing will become automatic and "
+"require little concentration. Then you will be able to pay attention to the "
+"real meaning of the text."
+msgstr ""
+"Namun tujuan tersebut tidak berarti bahwa seorang juru ketik harus berlaku "
+"seperti robot, tanpa perlu memahami apa yang diketiknya. Latihan kali ini "
+"bertujuan membangun ketrampilan mengetik, menjadi sebuah refleks otomatis "
+"seperti halnya berbicara, berjalan dll. Setelah tujuan ini tercapai, "
+"mengetik akan menjadi sesuatu yang otomatis dan membutuhkan konsentrasi "
+"minimal sehingga anda bisa mencurahkan perhatian pada maksud dan arti teks."
+
+#: ../src/translation.c:652
+msgid ""
+"These exercises are longer. Each exercise consists of three paragraphs and "
+"the emphasis is placed on correctness and rhythm, with a minimum speed "
+"requirement. Here you will be required to use the backspace key to correct "
+"any mistakes. In other words, only input without error will be accepted."
+msgstr ""
+"Latihan-latihan berikut lebih panjang. Setiap latihan terdiri dari tiga "
+"paragraf dan dititikberatkan pada ketepatan dan ritme, yang harus memenuhi "
+"kecepatan standar minimum. Di sini anda akan menggunakan tombol hapus "
+"('Backspace') untuk memperbaiki kesalahan. Dengan lain kata, hanya hasil "
+"tanpa kesalahan yang akan diterima."
+
+#: ../src/keyboard.c:1185
+msgid ""
+"Correct positioning of the hands and fingers is very important to efficient "
+"typing. You will learn faster and type better if you follow the next "
+"recommendations."
+msgstr ""
+"Posisi tangan dan jemari yang benar sangat penting untuk mengetik secara "
+"efisien. Anda akan belajar lebih cepat dan mengetik lebih baik apabila anda "
+"mengikuti anjuran berikut."
+
+#: ../src/keyboard.c:1188
+msgid ""
+"The index-finger tips rest over each of the two keys which have a small "
+"raised mark, in the center of the keyboard."
+msgstr ""
+"Ujung jari telunjuk bertumpu pada kedua tombol yang memiliki tonjolan, yang "
+"terletak pada bagian tengah papan ketik."
+
+#: ../src/keyboard.c:1191
+msgid ""
+"These marks function as 'tactile hooks' for your fingers to remain at the "
+"correct position. This way, with a little experience, you will not need to "
+"look at the keyboard to see if your fingers are properly positioned."
+msgstr ""
+"Tonjolan ini berfungsi sebagai 'acuan' agar jemari anda tetap berada pada "
+"posisi yang benar. Dengan cara ini dan sedikit pengalaman, anda tidak perlu "
+"melihat ke papan ketik untuk memastikan jemari anda pada posisi yang benar."
+
+#: ../src/keyboard.c:1195
+msgid ""
+"The tips of the other fingers lie naturally beside the index ones, over the "
+"keys on the same row of the keyboard."
+msgstr ""
+"Ujung dari jari-jari yang lain bersandar di samping jari telunjuk, pada "
+"tombol-tombol di baris yang sama di papan ketik."
+
+#: ../src/keyboard.c:1198
+msgid "The outside edges of your thumbs rest over the space bar."
+msgstr "Sisi luar dari jempol anda bersandar pada tombol spasi."
+
+#: ../src/keyboard.c:1200
+msgid ""
+"The part of the hands closest to the wrist (the base) rest over the table, "
+"outside the keyboard. Without this kind of support the arms would quickly "
+"tire."
+msgstr ""
+"Bagian tangan yang berada di dekat pergelangan bersandar ke laptop, di luar "
+"papan ketik. Tanpa topangan seperti ini lengan akan cepat lelah."
+
+#: ../src/keyboard.c:1203
+msgid ""
+"This is referred to as the home position for the hands. From it the fingers "
+"move all over the keyboard, reaching all the keys as naturally and quickly "
+"as possible. To reach this goal one uses a specific relation between each "
+"key and finger. This relation will be learned gradually as you complete the "
+"basic course."
+msgstr ""
+"Ini yang dimaksud dengan posisi awal untuk tangan. Dari posisi ini, jemari "
+"bergerak di atas papan ketik, menjelajahi seluruh tombol dengan alami dan "
+"secepat mungkin. Untuk mencapai tujuan ini seseorang menggunakan relasi "
+"khusus antar tiap tombol dan jari. Relasi ini akan dipelajari secara "
+"bertahap sambil anda menyelesaikan kursus tahap dasar."
+
+#: ../src/keyboard.c:1209
+msgid ""
+"When learning the relation between fingers and keys, it is very important "
+"that you only move the finger which must press the key and allow all other "
+"fingers to remain in the home position."
+msgstr ""
+"Pada saat mempelajari relasi antara jari dan tombol, anda hanya boleh "
+"menggerakan jari yang akan menekan tombol dan jari-jari yang lain tetap "
+"berada pada posisi awal."
+
+#: ../src/keyboard.c:1213
+msgid ""
+"After memorizing this relationship, you can relax the previous rule some, so "
+"that you can attain greater speed while typing."
+msgstr ""
+"Setelah hafal relasi jari-jari ini, anda dapat menyesuaikan diri, sehingga "
+"anda dapat mencapai kecepatan yang lebih tinggi pada saat mengetik."
+
+#: ../src/keyboard.c:1216
+msgid ""
+"The shift keys are used for capital letters and for some symbols. To get a "
+"shifted key input you should first use the small finger of the opposite "
+"hand. Just keep it in the closest Shift while reaching the target key with "
+"the other hand."
+msgstr ""
+"Tombol shift dipakai untuk huruf besar dan beberapa simbol. Untuk memperoleh "
+"masukan tombol dengan shift Anda mesti pertama memakai kelingking dari "
+"tangan yang satu lagi. Pertahankan itu pada Shift terdekat sambil meraih "
+"tombol target dengan tangan yang lain."
+
+#: ../src/keyboard.c:1220
+msgid ""
+"You should be prepared to start training with the basic course. It will take "
+"effort and patience to be successful as a typist. We trust you have these "
+"and look forward to your success!"
+msgstr ""
+"Anda akan memulai latihan dengan menyelesaikan kursus tahap dasar. Akan "
+"dibutuhkan usaha dan kesabaran untuk menjadi seorang juru ketik yang sukses. "
+"Kami percaya anda memilikinya dan bisa mencapai kesuksesan!"
+
+#: ../src/keyboard.c:1231
+#, c-format
+msgid "Step %i"
+msgstr "Langkah %i"
+
+#. Recommendations
+#: ../src/keyboard.c:1235
+msgid "To position the hands"
+msgstr "Memposisikan tangan"
+
+#. Final words
+#: ../src/keyboard.c:1318
+msgid "Go ahead!"
+msgstr "Lanjutkan!"
+
+#: ../src/keyboard.c:1326 ../src/keyboard.c:1328
+msgid "Click on any key to see which finger you must use:"
+msgstr "Klik sembarang tombol untuk melihat jari yang harus anda gunakan:"
+
+#: ../src/keyboard.c:1327
+msgid "Relation between fingers and keys"
+msgstr "Relasi antara jari dengan tombol"
+
+#: ../src/keyboard.c:1385 ../src/keyboard.c:1419
+msgid "Keyboard"
+msgstr "Papan Ketik"
+
+#: ../src/keyboard.c:1466
+msgid "Create or modify a custom keyboard layout"
+msgstr "Buat atau modifikasi tata letak papan ketik"
+
+#: ../src/keyboard.c:1714 ../src/keyboard.c:1738
+msgid "small finger"
+msgstr "kelingking"
+
+#: ../src/keyboard.c:1717 ../src/keyboard.c:1735
+msgid "ring finger"
+msgstr "jari manis"
+
+#: ../src/keyboard.c:1720 ../src/keyboard.c:1732
+msgid "middle finger"
+msgstr "jari tengah"
+
+#: ../src/keyboard.c:1723 ../src/keyboard.c:1729
+msgid "index finger"
+msgstr "telunjuk"
+
+#: ../src/keyboard.c:1824
+msgid "Press and edit me"
+msgstr "Tekan dan edit saya"
+
+#: ../src/tutor.c:325
+msgid "Lesson:"
+msgstr "Latihan:"
+
+#: ../src/tutor.c:335
+msgid "Paragraphs:"
+msgstr "Paragraf:"
+
+#: ../src/tutor.c:368
+msgid "Klavaro - Basic Course"
+msgstr "Klavaro - Kursus Dasar"
+
+#: ../src/tutor.c:373
+msgid "Klavaro - Adaptability"
+msgstr "Klavaro - Adaptasi"
+
+#: ../src/tutor.c:376
+msgid ""
+"Adaptability exercises: automating the fingers responses, typing over all "
+"the keyboard."
+msgstr ""
+"Latihan Penyesuain Diri: mengotomatisasi respon jemari, mengetik di seluruh "
+"papan ketik."
+
+#: ../src/tutor.c:381
+msgid "Klavaro - Velocity"
+msgstr "Klavaro - Kecepatan"
+
+#: ../src/tutor.c:382
+msgid "Velocity exercises: accelerate typing real words."
+msgstr "Latihan kecepatan: mengakselarasi mengetik kata-kata riil."
+
+#: ../src/tutor.c:386
+msgid "Klavaro - Fluidness"
+msgstr "Klavaro - Kelancaran"
+
+#: ../src/tutor.c:388
+msgid "Fluidness exercises: accuracy typing good sense paragraphs."
+msgstr "Latihan kelancaran: mengetik paragraf secara akurat."
+
+#: ../src/tutor.c:450
+msgid "End of exercise. Press [Enter] to start another."
+msgstr "Akhir dari latihan. Tekan [Enter] untuk melanjutkan."
+
+#: ../src/tutor.c:478
+msgid "Learning the key positions."
+msgstr "Mempelajari letak tombol."
+
+#: ../src/tutor.c:481
+msgid "Press any key to start the exercise. "
+msgstr "Tekan sembarang tombol untuk memulai. "
+
+#: ../src/tutor.c:609 ../src/tutor.c:612
+msgid "Start typing when you are ready. "
+msgstr "Mulai mengetik bila anda telah siap. "
+
+#: ../src/tutor.c:610
+msgid "Use backspace to correct errors."
+msgstr "Gunakan tombol hapus balik ('backspace') untuk memperbaiki kesalahan."
+
+#: ../src/tutor.c:1057
+#, c-format
+msgid ""
+"ps.: logging not performed for this session: the number of typed characters "
+"(%i) must be greater than %i."
+msgstr ""
+"PS : perekaman tidak dilakukan untuk sesi ini: jumlah karakter yang diketik  "
+"(%i) harusnya lebih besar daripada %i."
+
+#: ../src/tutor.c:1197
+msgid "ps.: you have entered the Top 10 list, great!"
+msgstr "PS : anda telah masuk dalam daftar 10 terbaik, selamat!"
+
+#: ../src/tutor.c:1211
+msgid ""
+"ps.: the text you just typed doesn't seem to be similar to ordinary texts in "
+"the language currently selected: we can't account for it in the 'Top 10' "
+"contest."
+msgstr ""
+"PS : Naskah yang ada ketik tidak mirip dengan naskah yang lazim dalam "
+"bahasa  yang anda pilih: Kami tidak akan menyertakannya dalam kontes '10 "
+"terbaik'."
+
+#. Begin the accuracy
+#: ../src/tutor.c:1256
+msgid "STATISTICS"
+msgstr "STATISTIK"
+
+#: ../src/tutor.c:1257
+msgid "Elapsed time:"
+msgstr "Waktu berjalan:"
+
+#: ../src/tutor.c:1258
+msgid "minute and"
+msgid_plural "minutes and"
+msgstr[0] "menit"
+
+#: ../src/tutor.c:1259
+msgid "second"
+msgid_plural "seconds"
+msgstr[0] "detik"
+
+#: ../src/tutor.c:1260
+msgid "Error ratio:"
+msgstr "Rasio kesalahan:"
+
+#: ../src/tutor.c:1260
+msgid "Accuracy:"
+msgstr "Akurasi:"
+
+#: ../src/tutor.c:1281 ../src/tutor.c:1306 ../src/tutor.c:1329
+#: ../src/tutor.c:1355
+msgid "Goal:"
+msgstr "Target:"
+
+#: ../src/tutor.c:1288
+msgid "Characters per second:"
+msgstr "Karakter per detik:"
+
+#: ../src/tutor.c:1306
+msgid "(CPS)"
+msgstr "(KPD)"
+
+#: ../src/tutor.c:1311
+msgid "Words per minute:"
+msgstr "Kata per menit:"
+
+#: ../src/tutor.c:1336
+msgid "Fluidness:"
+msgstr "Kelancaran:"
+
+#: ../src/tutor.c:1363
+msgid "Comments:"
+msgstr "Komentar:"
+
+#: ../src/tutor.c:1841
+msgid "space"
+msgstr "spasi"
+
+#. Translators: the name of letter Y
+#: ../src/tutor.c:1846
+msgid "wye"
+msgstr "ye"
+
+#. Translators: the name of the Return key
+#: ../src/tutor.c:1850
+msgid "enter"
+msgstr "enter"
+
+#: ../src/tutor.c:1856
+msgid "apostrophe"
+msgstr "tanda petik tunggal"
+
+#. Translators: double quote symbol: "
+#: ../src/tutor.c:1860
+msgid "quote"
+msgstr "tanda petik ganda"
+
+#. Translators: ampersand symbol: &
+#: ../src/tutor.c:1864
+msgid "ampersand"
+msgstr "simbol &"
+
+#. Error frequencies or touch times
+#.
+#: ../src/plot.c:318
+msgid "Character"
+msgstr "Huruf"
+
+#: ../src/plot.c:330
+msgid "Date & Time"
+msgstr "Tanggal & Waktu"
+
+#: ../src/basic.c:278
+msgid ""
+"This custom lesson is empty. You can define two or more different characters "
+"to generate a personal practice. Press the editting button in the upper-"
+"right corner."
+msgstr ""
+"Pelajaran ubahan ini kosong. Anda dapat mendefinisikan dua atau lebih "
+"karakater berbeda untuk menghasilkan suatu latihan pribadi. Tekan tombol "
+"penyuntingan di pojok kanan atas."
+
+#: ../src/basic.c:387
+msgid "Positions of keys seems to be learned!"
+msgstr "Posisi tombol tampaknya telah dikuasai!"
+
+#: ../src/basic.c:388
+msgid ""
+" Congratulations!\n"
+" You have accomplished the entire basic course.\n"
+" Go to the next type of exercise: adaptability.\n"
+" There you will practice mainly the accuracy.\n"
+msgstr ""
+" Selamat!\n"
+" Anda telah menyelesaikan seluruh kursus dasar.\n"
+" Lanjutkan ke tahap latihan selanjutnya: Adaptasi.\n"
+" Dalam latihan tersebut anda akan berlatih keakuratan.\n"
+
+#: ../src/basic.c:394
+msgid ""
+" All right, now you got it!\n"
+" Go to the next lesson.\n"
+msgstr ""
+" Bagus, anda telah menguasainya!\n"
+" Lanjutkan ke latihan berikutnya.\n"
+
+#: ../src/adaptability.c:251
+#, c-format
+msgid ""
+" Your accuracy rate is below %.0f%%...\n"
+" Could you please try again to improve it?\n"
+msgstr ""
+" Tingkat akurasi anda di bawah %.0f%%…\n"
+" Ulangi lagi untuk memperbaikinya?\n"
+
+#: ../src/adaptability.c:254
+#, c-format
+msgid ""
+" You are doing well. But...\n"
+" Could you make the accuracy reach %.0f%%?\n"
+msgstr ""
+" Anda melakukannya dengan baik. Tapi…\n"
+" Dapatkah anda membuat tingkat akurasi mencapai %.0f%% ?\n"
+
+#: ../src/adaptability.c:257
+#, c-format
+msgid ""
+" You are almost there, but your accuracy rate is still below %.0f%%.\n"
+" Try a few more times, or maybe you're getting upset, so go to another kind "
+"of exercise.\n"
+msgstr ""
+" Anda sudah mendekati target, tapi tingkat akurasi anda masih di bawah %.0f"
+"%%.\n"
+" Coba beberapa kali lagi, atau anda mungkin sudah lelah, jadi lanjutkan ke "
+"jenis latihan yang lain.\n"
+
+#: ../src/adaptability.c:264
+#, c-format
+msgid ""
+" Very good!\n"
+" You succeeded with an accuracy rate above %.0f%%.\n"
+" Now it is time to increase your velocity.\n"
+" Go to the 3rd exercise at the main menu.\n"
+msgstr ""
+" Sangat Baik!\n"
+" Anda berhasil dengan tingkat keakurasian di atas %.0f%%.\n"
+" Sekarang waktunya untuk meningkatan kecepatan anda.\n"
+" Lanjutnya ke latihan ketiga di menu utama.\n"
+
+#: ../src/velocity.c:337 ../src/fluidness.c:440
+msgid "Pasted_or_dropped"
+msgstr "Tempel_atau_buang"
+
+#: ../src/velocity.c:448
+msgid ""
+" You are just beginning.\n"
+" Be patient, try it again every day, rest and don't worry so much:\n"
+" persistence and practice will improve your velocity.\n"
+msgstr ""
+" Anda baru saja memulai.\n"
+" Bersabarlah, coba lakukan setiap hari, beristirahatlah dan jangan terlalu "
+"cemas:\n"
+" Ketekunan dan latihan akan memperbaiki kecepatan anda.\n"
+
+#: ../src/velocity.c:452
+#, c-format
+msgid ""
+" Still away from the highway. You can do better...\n"
+" Try to reach at least %.0f WPM.\n"
+msgstr ""
+" Anda masih jauh dari jalan bebas hambatan. Anda dapat melakukannya lebih "
+"baik…\n"
+" Coba untuk mencapai setidaknya %.0f KPM.\n"
+
+#: ../src/velocity.c:455
+#, c-format
+msgid ""
+" You are doing well, but need to go faster.\n"
+" And don't forget the accuracy. Try to get %.0f WPM.\n"
+msgstr ""
+" Anda sudah melakukannya dengan baik, tapi perlu lebih cepat.\n"
+" Jangan abaikan akurasi. Usahakan agar anda bisa mencapai %.0f KPM.\n"
+
+#: ../src/velocity.c:458
+#, c-format
+msgid ""
+" Fine. Now you need to start running.\n"
+" Can you reach %.0f WPM?\n"
+msgstr ""
+" Bagus. Sekarang anda perlu berlari.\n"
+" Apakah anda bisa mencapai %.0f KPM ?\n"
+
+#: ../src/velocity.c:461
+#, c-format
+msgid ""
+" Very good. You are almost there.\n"
+" Can you finally reach %.0f WPM?\n"
+msgstr ""
+" Sangat Bagus. Anda hampir mencapai target.\n"
+" Sekarang bisakah anda mencapai %.0f KPM ?\n"
+
+#: ../src/velocity.c:464
+msgid ""
+" Excellent. For this course, that is enough.\n"
+" Try now the fluidness exercises, OK?\n"
+msgstr ""
+" Luar biasa. Untuk kursus tahap ini, itu sudah mencukupi.\n"
+" Sekarang coba lanjutkan dengan latihan kelancaran, OK?\n"
+
+#: ../src/velocity.c:467
+#, c-format
+msgid ""
+" Fast! Are you a professional?\n"
+" So, try to get %.0f WPM!\n"
+msgstr ""
+" Sangat Cepat! Apakah anda seorang profesional?\n"
+" Bisakah anda mencapai %.0f KPM!\n"
+
+#. Translators: Speed Racer is a reference to a Japanese anime franchise
+#. about automobile racing, also known as Mach GoGoGo.
+#: ../src/velocity.c:472
+#, c-format
+msgid " Ranking good, Speed Racer! Are you afraid of reaching %.0f WPM?\n"
+msgstr ""
+" Ranking yang baik, Pembalap Cepat! Apakah anda takut mencapai %.0f KPM?\n"
+
+#. Translators: feel free to change the reference to that martial art, if you find another good analogy.
+#: ../src/velocity.c:476
+#, c-format
+msgid ""
+" Kung-fu mastery!\n"
+" Can you fly at %.0f WPM?\n"
+msgstr ""
+" Guru Kung Fu!\n"
+" Dapatkah anda terbang pada kecepatan %.0f KPM?\n"
+
+#. Translators: Dvorak here means that infamous ergonomic keyboard layout. Feel free to change the speed mastery analogy.
+#: ../src/velocity.c:479
+msgid ""
+" Dvorak master!\n"
+" I have no words to express my admiration!\n"
+msgstr ""
+" Pakar Dvorak!\n"
+" Saya kehabisan kata-kata untuk kekaguman saya!\n"
+
+#: ../src/fluidness.c:543
+#, c-format
+msgid ""
+" You type accurately but not so fast.\n"
+" Can you reach %.0f WPM?\n"
+msgstr ""
+" Anda mengetik dengan akurat tapi tidak terlalu cepat.\n"
+" Dapatkah anda mencapai %.0f KPM?\n"
+
+#: ../src/fluidness.c:546
+#, c-format
+msgid ""
+" Your rhythm is not so constant. Calm down.\n"
+" For now, try to make the fluidness greater than %i%%.\n"
+msgstr ""
+" Ritme anda tidak terlalu konstan. Relaks.\n"
+" Untuk saat ini, coba melancarkannya agar melebihi %i%%.\n"
+
+#: ../src/fluidness.c:549
+#, c-format
+msgid ""
+" You are almost getting there. Type more fluently.\n"
+" I want a fluidness greater than %.0f%%.\n"
+msgstr ""
+" Anda hampir mendekati. Ketik dengan lebih lancar.\n"
+" Saya ingin kelancaran anda melebihi  %.0f%%.\n"
+
+#: ../src/fluidness.c:552
+msgid ""
+" Congratulations!\n"
+" It seems to me that you are a professional.\n"
+" You don't need this program (me) anymore.\n"
+" Hope you have enjoyed. Thanks and be happy!\n"
+msgstr ""
+" Selamat!\n"
+" Anda nampaknya seorang profesional!\n"
+" Anda tidak lagi memerlukan program ini (saya).\n"
+" Saya harap anda menikmatinya. Terima kasih dan berbahagia selalu!\n"
+
+#: ../src/fluidness.c:557
+msgid ""
+" How can you type so fast?\n"
+" You have exceeded all my expectations.\n"
+" Are you a machine? Could you teach me?\n"
+" I can not help you anymore. Go to an expert!\n"
+msgstr ""
+" Bagaimana anda bisa mengetik begitu cepat?\n"
+" Anda telah melebihi harapan saya.\n"
+" Apakah anda mesin? Bisakah anda melatih saya?\n"
+" Saya tidak bis membantu anda lebih jauh. Cari seorang pakar!\n"
+
+#: ../src/top10.c:72
+msgid "Name"
+msgstr "Nama"
+
+#: ../src/top10.c:98
+msgid "Chars"
+msgstr "Karakter"
+
+#: ../src/top10.c:100
+msgid "When"
+msgstr "Bilamana"
+
+#: ../src/top10.c:129
+msgid "Local scores"
+msgstr "Skor lokal"
+
+#: ../src/top10.c:130
+msgid "External scores"
+msgstr "Skor eksternal"
+
+#: ../src/top10.c:717
+msgid "Empty ranking. Please practice fluidness."
+msgstr "Ranking kosong. Mohon berlatih kelancaran."
+
+#: ../src/top10.c:814
+msgid "Not able to download files"
+msgstr "Tidak dapat mengunduh berkas"
+
+#: ../src/top10.c:814 ../src/top10.c:906
+msgid "not found"
+msgstr "tidak ditemukan"
+
+#: ../src/top10.c:815 ../src/top10.c:907
+msgid "Are you sure you have it installed in your system?"
+msgstr "Apakah anda yakin anda telah menginstalasinya di sistem anda?"
+
+#: ../src/top10.c:861
+msgid "Could not download file from the host server."
+msgstr "Tidak dapat mengunduh berkas dari server."
+
+#: ../src/top10.c:906
+msgid "Not able to upload files"
+msgstr "Tidak dapat mengunggah berkas"
+
+#: ../src/top10.c:993
+msgid "Could not upload/download scores."
+msgstr "Tidak dapat mengunggah/mengunduh skor."
