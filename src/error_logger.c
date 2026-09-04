@@ -25,9 +25,12 @@
 #include <string.h>
 #include <glib.h>
 #include <glib/gstdio.h>
+#include <gtk/gtk.h>
 #include <time.h>
 
 #include "main.h"
+#include "auxiliar.h"
+#include "keyboard.h"
 #include "error_logger.h"
 
 /* Global error statistics storage */
@@ -239,10 +242,12 @@ error_logger_load (void)
         /* Read data lines */
         while (fgets (line, sizeof(line), fh) && error_stats.count < MAX_ERROR_CHARS)
         {
-            if (sscanf (line, "%s\t%s\t%lu\t%lu\t%lu\t%lf", 
-                       &error_stats.chars[error_stats.count].uchr,
+            guint uchr_val;
+            if (sscanf (line, "%u\t%s\t%lu\t%lu\t%lu\t%lf", 
+                       &uchr_val,
                        utf8, &wrong, &correct, &total, &error_rate) == 6)
             {
+                error_stats.chars[error_stats.count].uchr = (gunichar)uchr_val;
                 error_stats.chars[error_stats.count].wrong_count = wrong;
                 error_stats.chars[error_stats.count].correct_count = correct;
                 error_stats.chars[error_stats.count].total_attempts = total;
@@ -501,6 +506,3 @@ error_logger_reset (void)
     
     g_message ("Error statistics reset");
 }
-
-/* Wrapper functions for keyboard.h dependency */
-extern gchar * keyb_get_name (void);

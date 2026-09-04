@@ -25,8 +25,10 @@
 #include <string.h>
 #include <glib.h>
 #include <glib/gstdio.h>
+#include <gtk/gtk.h>
 
 #include "main.h"
+#include "auxiliar.h"
 #include "error_logger.h"
 #include "error_practice.h"
 #include "keyboard.h"
