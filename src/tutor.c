@@ -491,6 +491,29 @@ tutor_update_intro ()
 
 	tutor_message (_("Press any key to start the exercise. "));
 
+	if (tutor.type == TT_ERROR_PRACTICE)
+	{
+		gchar *practice_text;
+		gchar *intro;
+		gint nchars = error_practice_get_count ();
+
+		wg_text = GTK_TEXT_VIEW (get_wg ("text_tutor"));
+		if (nchars > 0)
+		{
+			intro = g_strdup_printf (_("Your most frequent error keys will be emphasized. "
+						"Press any key to start. %d keys to practice."), nchars);
+			gtk_text_buffer_set_text (gtk_text_view_get_buffer (wg_text), intro, -1);
+			g_free (intro);
+		}
+		else
+		{
+			practice_text = error_practice_get_text ();
+			gtk_text_buffer_set_text (gtk_text_view_get_buffer (wg_text), practice_text, -1);
+			g_free (practice_text);
+		}
+		goto intro_done;
+	}
+
 	tmp_name = g_strconcat ("_", tutor_get_type_name (), "_intro.txt", NULL);
 	text = trans_read_text (tmp_name);
 	g_free (tmp_name);
@@ -499,6 +522,7 @@ tutor_update_intro ()
 	gtk_text_buffer_set_text (gtk_text_view_get_buffer (wg_text), text, -1);
 	g_free (text);
 
+intro_done:
 	gtk_text_buffer_get_bounds (gtk_text_view_get_buffer (wg_text), &start, &end);
 	gtk_text_buffer_apply_tag_by_name (gtk_text_view_get_buffer (wg_text), "lesson_font", &start, &end);
 	gtk_text_buffer_apply_tag_by_name (gtk_text_view_get_buffer (wg_text), "text_intro", &start, &end);
