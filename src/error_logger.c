@@ -1,6 +1,7 @@
 /**************************************************************************/
 /*  Klavaro - a flexible touch typing tutor                               */
 /*  Copyright (C) 2005-2021 Felipe Emmanuel Ferreira de Castro            */
+/*  Error logging & Pareto analysis: Copyright (C) 2026 ordanax            */
 /*                                                                        */
 /*  This file is part of Klavaro, which is a free software: you can       */
 /*  redistribute it and/or modify it under the terms of the GNU General   */
