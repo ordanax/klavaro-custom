@@ -246,6 +246,7 @@ tutor_goal_accuracy ()
 		case TT_ADAPT: return goal.adapt.accuracy;
 		case TT_VELO: return goal.velo.accuracy;
 		case TT_FLUID: return goal.fluid.accuracy;
+		case TT_ERROR_PRACTICE: return 100.0;
 	}
 	return -1.0;
 }
