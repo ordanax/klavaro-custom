@@ -285,7 +285,7 @@ msgstr "Следующий шаг"
 
 #: ../data/klavaro.glade.h:65
 msgid "_Next step"
-msgstr "_Вперед"
+msgstr "_Вперёд"
 
 #: ../data/klavaro.glade.h:66
 msgid "Return without any modification."
@@ -353,7 +353,7 @@ msgstr "Повышайте мастерство, практикуясь в на�
 
 #: ../data/klavaro.glade.h:81
 msgid "Practice with complete texts"
-msgstr "Практика с объемными текстами"
+msgstr "Практика с объёмными текстами"
 
 #: ../data/klavaro.glade.h:82
 msgid "Speech"
@@ -393,7 +393,7 @@ msgstr "О прогр_амме..."
 
 #: ../data/klavaro.glade.h:90 ../data/klavaro.desktop.in.h:2
 msgid "Yet another touch typing tutor"
-msgstr "Еще один клавиатурный тренажер"
+msgstr "Ещё один клавиатурный тренажёр"
 
 #: ../data/klavaro.glade.h:91
 msgid "Remember always: someone loves you!"
@@ -421,7 +421,7 @@ msgstr "_Участвовать"
 
 #: ../data/klavaro.glade.h:97
 msgid "Download from the web the most up to date ranking."
-msgstr "Загрузить из Интернета обновленные данные"
+msgstr "Загрузить из Интернета обновлённые данные"
 
 #: ../data/klavaro.glade.h:98
 msgid "_Update"
@@ -433,7 +433,7 @@ msgstr "Klavaro"
 
 #: ../data/klavaro.desktop.in.h:3
 msgid "A very flexible and efficient touch typing tutor."
-msgstr "Легко приспособляемый и эффективный клавиатурный тренажер."
+msgstr "Легко приспособляемый и эффективный клавиатурный тренажёр."
 
 #: ../src/main.c:308
 msgid "(Custom)"
@@ -759,7 +759,7 @@ msgid ""
 "the other hand."
 msgstr ""
 "Клавиши shift используются для ввода заглавных букв и некоторых символов. "
-"Чтобы получить результат от нажатия shift, сначала вы должны нажать ее "
+"Чтобы получить результат от нажатия shift, сначала вы должны нажать её "
 "мизинцем противоположной руки. Затем, не отпуская Shift, нажать нужную "
 "клавишу другой рукой."
 
@@ -844,7 +844,7 @@ msgid ""
 "Adaptability exercises: automating the fingers responses, typing over all "
 "the keyboard."
 msgstr ""
-"Упражнения на адаптивность: автоматизация работы пальцев путем набора по "
+"Упражнения на адаптивность: автоматизация работы пальцев путём набора по "
 "всей клавиатуре"
 
 #: ../src/tutor.c:381
@@ -1025,7 +1025,7 @@ msgstr ""
 " Поздравляем!\n"
 " Вы прошли начальный курс.\n"
 " Переходите к следующему упражнению — на адаптивность.\n"
-" В нем вы научитесь набирать более точно.\n"
+" В нём вы научитесь набирать более точно.\n"
 
 #: ../src/basic.c:394
 msgid ""
@@ -1050,7 +1050,7 @@ msgid ""
 " You are doing well. But...\n"
 " Could you make the accuracy reach %.0f%%?\n"
 msgstr ""
-" Вы все делаете хорошо. Но…\n"
+" Вы всё делаете хорошо. Но…\n"
 " Попробуете повысить точность до %.0f%%?\n"
 
 #: ../src/adaptability.c:257
@@ -1060,8 +1060,8 @@ msgid ""
 " Try a few more times, or maybe you're getting upset, so go to another kind "
 "of exercise.\n"
 msgstr ""
-" Вы почти справились, но ваша точность все еще ниже %.0f%%.\n"
-" Попробуйте еще раз или, если вы нервничаете, возьмитесь за другое "
+" Вы почти справились, но ваша точность всё ещё ниже %.0f%%.\n"
+" Попробуйте ещё раз или, если вы нервничаете, возьмитесь за другое "
 "упражнение.\n"
 
 #: ../src/adaptability.c:264
@@ -1090,7 +1090,7 @@ msgstr ""
 " Вы пока что новичок.\n"
 " Запаситесь терпением, повторяйте упражнение каждый день, отдыхайте и не "
 "волнуйтесь:\n"
-" терпение и труд все перетрут.\n"
+" терпение и труд всё перетрут.\n"
 
 #: ../src/velocity.c:452
 #, c-format
@@ -1107,7 +1107,7 @@ msgid ""
 " You are doing well, but need to go faster.\n"
 " And don't forget the accuracy. Try to get %.0f WPM.\n"
 msgstr ""
-" Вы все делаете хорошо, но надо бы чуть быстрее.\n"
+" Вы всё делаете хорошо, но надо бы чуть быстрее.\n"
 " Однако не забывайте о точности.\n"
 " Попробуйте достичь скорости %.0f слов в минуту.\n"
 
@@ -1118,7 +1118,7 @@ msgid ""
 " Can you reach %.0f WPM?\n"
 msgstr ""
 " Прекрасно. Наконец-то вы зашевелились.\n"
-" Как насчет %.0f слов в минуту?\n"
+" Как насчёт %.0f слов в минуту?\n"
 
 #: ../src/velocity.c:461
 #, c-format
@@ -1127,7 +1127,7 @@ msgid ""
 " Can you finally reach %.0f WPM?\n"
 msgstr ""
 " Очень хорошо. Вы почти у цели.\n"
-" Может все-таки поднапряжетесь и достигнете %.0f слов в минуту?\n"
+" Может всё-таки поднапряжётесь и достигнете %.0f слов в минуту?\n"
 
 #: ../src/velocity.c:464
 msgid ""
@@ -1197,7 +1197,7 @@ msgid ""
 " You are almost getting there. Type more fluently.\n"
 " I want a fluidness greater than %.0f%%.\n"
 msgstr ""
-" Вы почти достигли цели. Печатайте еще плавнее. \n"
+" Вы почти достигли цели. Печатайте ещё плавнее. \n"
 " Ваша цель — повысить плавность выше %.0f%%.\n"
 
 #: ../src/fluidness.c:552
@@ -1219,7 +1219,7 @@ msgid ""
 " Are you a machine? Could you teach me?\n"
 " I can not help you anymore. Go to an expert!\n"
 msgstr ""
-" Как вам удается так быстро печатать?\n"
+" Как вам удаётся так быстро печатать?\n"
 " Это за пределами человеческих возможностей.\n"
 " Может вы не человек, а программа?\n"
 " Ваше обучение закончено. Можете удалить эту программу\n"
@@ -1262,15 +1262,15 @@ msgstr "Вы уверены, что он установлен в системе?
 
 #: ../src/top10.c:861
 msgid "Could not download file from the host server."
-msgstr "Не удается загрузить файл с локального сервера"
+msgstr "Не удаётся загрузить файл с локального сервера"
 
 #: ../src/top10.c:906
 msgid "Not able to upload files"
-msgstr "Не удается отправить файлы"
+msgstr "Не удаётся отправить файлы"
 
 #: ../src/top10.c:993
 msgid "Could not upload/download scores."
-msgstr "Не удается отправить/загрузить очки"
+msgstr "Не удаётся отправить/загрузить очки"
 
 #~ msgid "Little tip about this program."
 #~ msgstr "Небольшой совет по использованию программы"
@@ -1294,8 +1294,8 @@ msgstr "Не удается отправить/загрузить очки"
 #~ "type of exercise you wish to take. Do not worry about clicking any button "
 #~ "on the screen. The buttons will never hurt you!"
 #~ msgstr ""
-#~ "Главное меню приложения очень простое. Просто выберите в нем нужный тип "
-#~ "упражнения. Не бойтесь нажимать кнопки — ничего страшного не произойдет."
+#~ "Главное меню приложения очень простое. Просто выберите в нём нужный тип "
+#~ "упражнения. Не бойтесь нажимать кнопки — ничего страшного не произойдёт."
 
 #~ msgid ""
 #~ "Also the controls have tips which will appear if you hover over them with "
@@ -1305,7 +1305,7 @@ msgstr "Не удается отправить/загрузить очки"
 #~ msgstr ""
 #~ "У многих элементов управления есть всплывающие подсказки, которые могут "
 #~ "пригодиться на начальном этапе. Чтобы увидеть, как работает эта функция, "
-#~ "наведите курсор мыши на кнопку ниже и не нажимайте ее, пока не появится "
+#~ "наведите курсор мыши на кнопку ниже и не нажимайте её, пока не появится "
 #~ "сообщение..."
 
 #~ msgid "Keep this checked if you want to get those nice beeps."
@@ -1315,7 +1315,7 @@ msgstr "Не удается отправить/загрузить очки"
 #~ msgstr "_Сигнал"
 
 #~ msgid "keyboard;typing;tutor;CAI"
-#~ msgstr "клавиатура;набор;тренажер"
+#~ msgstr "клавиатура;набор;тренажёр"
 
 #~ msgid "_Font"
 #~ msgstr "_Шрифт"
