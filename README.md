@@ -1,6 +1,6 @@
 # Klavaro Custom
 
-Форк **Klavaro 3.14** — свободного клавиатурного тренажёра (GPL v3), с добавленной системой анализа и исправления ошибок печати.
+Форк **Klavaro 3.14** — свободного клавиатурного тренажера (GPL v3), с добавленной системой анализа и исправления ошибок печати.
 
 A fork of **Klavaro 3.14** — a free touch typing tutor (GPL v3), extended with an error-analysis and error-correction training system.
 
@@ -10,7 +10,7 @@ A fork of **Klavaro 3.14** — a free touch typing tutor (GPL v3), extended with
 
 ### 1. Детальное логирование ошибок / Detailed error logging
 
-Каждая совершённая ошибка (нажатая клавиша вместо ожидаемой) записывается в отдельный файл. Every missed keystroke (pressed key instead of the expected one) is recorded to a dedicated file.
+Каждая совершенная ошибка (нажатая клавиша вместо ожидаемой) записывается в отдельный файл. Every missed keystroke (pressed key instead of the expected one) is recorded to a dedicated file.
 
 - Формат: символ, UTF-8 код, сколько раз ошиблись, сколько раз нажали верно, общее число попыток, процент ошибок
 - Format: character, UTF-8 code, wrong count, correct count, total attempts, error rate
@@ -66,12 +66,12 @@ sudo make install
 4. После нескольких сессий загляните в `pareto_analysis_<layout>.log`, чтобы видеть прогресс (какие символы перестали быть проблемными).
    After a few sessions, check `pareto_analysis_<layout>.log` to track which characters are no longer problematic.
 
-Пути к логам: `~/.local/share/klavaro/` (наружу задаётся переменной `$XDG_DATA_HOME`).
+Пути к логам: `~/.local/share/klavaro/` (наружу задается переменной `$XDG_DATA_HOME`).
 Log locations: `~/.local/share/klavaro/` (overridden by `$XDG_DATA_HOME`).
 
 ---
 
-## / Структура изменённых файлов / Changed files
+## / Структура измененных файлов / Changed files
 
 | Файл / File | Изменение / Change |
 |---|---|
