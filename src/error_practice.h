@@ -35,6 +35,8 @@ void error_practice_init (void);
 /* Get practice text focusing on top error characters */
 gchar * error_practice_get_text (void);
 
+void error_practice_focus_single_char (gunichar uchr);
+
 /* Get the list of characters being practiced */
 gint error_practice_get_chars (gunichar **chars);
 

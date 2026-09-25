@@ -41,6 +41,7 @@
 #include "fluidness.h"
 #include "accuracy.h"
 #include "error_practice.h"
+#include "error_logger.h"
 #include "top10.h"
 #include "tutor.h"
 
@@ -59,6 +60,8 @@ struct
 	gint n_errors;
 	gint retro_pos;
 	gint correcting;
+	gunichar suggested_practice_char;
+	gboolean suggest_practice_switch;
 } tutor;
 
 struct
@@ -445,6 +448,8 @@ tutor_init (TutorType tt_type)
 void
 tutor_update ()
 {
+	gchar *message = NULL;
+
 	switch (tutor.query)
 	{
 	case QUERY_INTRO:
@@ -459,7 +464,16 @@ tutor_update ()
 		break;
 
 	case QUERY_END:
-		tutor_message (_("End of exercise. Press [Enter] to start another."));
+		if (tutor.suggest_practice_switch)
+		{
+			message = g_strdup_printf (
+				_("Most errors were made with the character “%C”. Press [Enter] to focus the next lesson on it, or [Esc] to stay."),
+				tutor.suggested_practice_char);
+			tutor_message (message);
+			g_free (message);
+		}
+		else
+			tutor_message (_("End of exercise. Press [Enter] to start another."));
 		break;
 	}
 }
@@ -656,11 +670,8 @@ tutor_update_start ()
 		start = end;
 	}
 	
-	if (tutor.type == TT_FLUID)
-		tmp_name = g_strconcat (_("Start typing when you are ready. "), " ",
+	tmp_name = g_strconcat (_("Start typing when you are ready. "), " ",
 			       _("Use backspace to correct errors."), " ", NULL);
-	else
-		tmp_name = g_strdup (_("Start typing when you are ready. "));
 
 	tutor_message (tmp_name);
 	g_free (tmp_name);
@@ -702,6 +713,8 @@ tutor_process_touch (gunichar user_chr)
 		tutor.n_errors = 0;
 		tutor.retro_pos = 0;
 		tutor.correcting = 0;
+		tutor.suggested_practice_char = 0;
+		tutor.suggest_practice_switch = FALSE;
 		tutor.ttidx = 0;
 		gtk_text_buffer_get_start_iter (wg_buffer, &start);
 		gtk_text_buffer_place_cursor (wg_buffer, &start);
@@ -763,6 +776,9 @@ tutor_process_touch (gunichar user_chr)
 	case QUERY_END:
 		if (user_chr == UPSYM)
 		{
+			if (tutor.type == TT_ERROR_PRACTICE &&
+			    tutor.suggest_practice_switch)
+				error_practice_focus_single_char (tutor.suggested_practice_char);
 			basic_set_lesson_increased (FALSE);
 			tutor.query = QUERY_INTRO;
 			tutor_process_touch (L'\0');
@@ -836,9 +852,31 @@ tutor_eval_forward (gunichar user_chr)
 {
 	gunichar real_chr;
 
+	/* L'\t' means Ctrl+Backspace. */
 	if (user_chr == L'\b' || user_chr == L'\t')
 	{
-		tutor_beep ();
+		tutor.touch_time[tutor.ttidx] = g_timer_elapsed (tutor.tmr, NULL);
+
+		if (cursor_advance (-1) != -1)
+		{
+			tutor_beep ();
+			return (TRUE);
+		}
+
+		if (cursor_get_char () == L'\n')
+			if (cursor_advance (-1) != -1)
+			{
+				tutor_beep ();
+				return (TRUE);
+			}
+
+		cursor_paint_char ("char_untouched");
+
+		tutor.retro_pos++;
+		tutor.correcting++;
+
+		if (user_chr == L'\t')
+			tutor_eval_forward (L'\t');
 		return (TRUE);
 	}
 
@@ -851,9 +889,6 @@ tutor_eval_forward (gunichar user_chr)
 	if (user_chr == UPSYM && real_chr == L' ')
 		user_chr = L' ';
 
-	/*
-	 * Compare the user char with the real char and set the color
-	 */
 	if (user_chr == real_chr)
 	{
 		if (tutor.ttidx < MAX_TOUCH_TICS)
@@ -865,7 +900,10 @@ tutor_eval_forward (gunichar user_chr)
 			if (tutor.type != TT_BASIC)
 				accur_correct (real_chr, tutor.touch_time[tutor.ttidx-1]);
 		}
-		cursor_paint_char ("char_correct");
+		if (tutor.correcting != 0)
+			cursor_paint_char ("char_retouched");
+		else
+			cursor_paint_char ("char_correct");
 	}
 	else
 	{
@@ -877,6 +915,10 @@ tutor_eval_forward (gunichar user_chr)
 		tutor_beep ();
 	}
 
+	if (tutor.retro_pos > 0)
+		tutor.retro_pos--;
+	if (tutor.correcting > 0)
+		tutor.correcting--;
 
 	/*
 	 * Go forward and test end of text
@@ -1019,6 +1061,50 @@ tutor_eval_forward_backward (gunichar user_chr)
 	return (TRUE);
 }
 
+
+static void
+tutor_update_error_practice_suggestion (void)
+{
+	ErrorCharDetail *top_chars = NULL;
+	gint top_count;
+	gulong set_errors = 0;
+	gint i;
+	gboolean dominant;
+	gboolean clear_leader;
+
+	tutor.suggested_practice_char = 0;
+	tutor.suggest_practice_switch = FALSE;
+
+	if (tutor.type != TT_ERROR_PRACTICE)
+		return;
+
+	top_count = error_pareto_get_top_chars (&top_chars);
+	if (top_count <= 0 || top_chars == NULL)
+		return;
+	if (top_count > MAX_PRACTICE_CHARS)
+		top_count = MAX_PRACTICE_CHARS;
+
+	for (i = 0; i < top_count; i++)
+		set_errors += top_chars[i].wrong_count;
+
+	if (set_errors == 0 || top_chars[0].wrong_count == 0)
+	{
+		g_free (top_chars);
+		return;
+	}
+
+	dominant = top_chars[0].wrong_count * 10 >= set_errors * 3;
+	clear_leader = top_count == 1 ||
+	                top_chars[0].wrong_count >= top_chars[1].wrong_count + 2;
+
+	if (dominant || clear_leader)
+	{
+		tutor.suggested_practice_char = top_chars[0].uchr;
+		tutor.suggest_practice_switch = TRUE;
+	}
+
+	g_free (top_chars);
+}
 
 /**********************************************************************
  * Calculate the final results
@@ -1435,6 +1521,7 @@ tutor_calc_stats ()
 		}
 		break;
 	}
+	tutor_update_error_practice_suggestion ();
 	g_free (tmp_str2);
 
 	/* This is needed to repaint the final comments with normal black foreground. */
