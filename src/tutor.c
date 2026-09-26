@@ -62,6 +62,7 @@ struct
 	gint correcting;
 	gunichar suggested_practice_char;
 	gboolean suggest_practice_switch;
+	gint suggested_basic_lesson;
 } tutor;
 
 struct
@@ -185,15 +186,26 @@ tutor_init_timers ()
 void
 tutor_init_goals ()
 {
-	GOAL_GSET (basic, accuracy, 95);
+	GOAL_GSET (basic, accuracy, 100);
 	GOAL_GSET (basic, speed, 10);
-	GOAL_GSET (adapt, accuracy, 98);
+	GOAL_GSET (adapt, accuracy, 100);
 	GOAL_GSET (adapt, speed, 10);
-	GOAL_GSET (velo, accuracy, 95);
+	GOAL_GSET (velo, accuracy, 100);
 	GOAL_GSET (velo, speed, 50);
-	GOAL_GSET (fluid, accuracy, 97);
+	GOAL_GSET (fluid, accuracy, 100);
 	GOAL_GSET (fluid, speed, 50);
 	GOAL_GSET (fluid, fluidity, 70);
+
+	/* Force 100% accuracy target in every exercise type, even if an
+	 * older value (95/97/98) was saved in the preferences before. */
+	main_preferences_set_int ("goals", "basic_accuracy", 100);
+	main_preferences_set_int ("goals", "adapt_accuracy", 100);
+	main_preferences_set_int ("goals", "velo_accuracy", 100);
+	main_preferences_set_int ("goals", "fluid_accuracy", 100);
+	goal.basic.accuracy = 100;
+	goal.adapt.accuracy = 100;
+	goal.velo.accuracy = 100;
+	goal.fluid.accuracy = 100;
 
 	LEVEL_GSET (adapt, accuracy_learning, 50);
 	LEVEL_GSET (adapt, accuracy_improving, 90);
@@ -467,8 +479,8 @@ tutor_update ()
 		if (tutor.suggest_practice_switch)
 		{
 			message = g_strdup_printf (
-				_("Most errors were made with the character “%C”. Press [Enter] to focus the next lesson on it, or [Esc] to stay."),
-				tutor.suggested_practice_char);
+				_("3+ errors with the character “%C”. Press [Enter] to practice it in lesson %d of the beginner course, or [Esc] to stay."),
+				tutor.suggested_practice_char, tutor.suggested_basic_lesson);
 			tutor_message (message);
 			g_free (message);
 		}
@@ -715,6 +727,7 @@ tutor_process_touch (gunichar user_chr)
 		tutor.correcting = 0;
 		tutor.suggested_practice_char = 0;
 		tutor.suggest_practice_switch = FALSE;
+		tutor.suggested_basic_lesson = 0;
 		tutor.ttidx = 0;
 		gtk_text_buffer_get_start_iter (wg_buffer, &start);
 		gtk_text_buffer_place_cursor (wg_buffer, &start);
@@ -777,8 +790,13 @@ tutor_process_touch (gunichar user_chr)
 		if (user_chr == UPSYM)
 		{
 			if (tutor.type == TT_ERROR_PRACTICE &&
-			    tutor.suggest_practice_switch)
-				error_practice_focus_single_char (tutor.suggested_practice_char);
+			    tutor.suggest_practice_switch &&
+			    tutor.suggested_basic_lesson > 0)
+			{
+				basic_set_lesson (tutor.suggested_basic_lesson);
+				tutor_init (TT_BASIC);
+				return;
+			}
 			basic_set_lesson_increased (FALSE);
 			tutor.query = QUERY_INTRO;
 			tutor_process_touch (L'\0');
@@ -1067,13 +1085,11 @@ tutor_update_error_practice_suggestion (void)
 {
 	ErrorCharDetail *top_chars = NULL;
 	gint top_count;
-	gulong set_errors = 0;
-	gint i;
-	gboolean dominant;
-	gboolean clear_leader;
+	gulong top_wrong;
 
 	tutor.suggested_practice_char = 0;
 	tutor.suggest_practice_switch = FALSE;
+	tutor.suggested_basic_lesson = 0;
 
 	if (tutor.type != TT_ERROR_PRACTICE)
 		return;
@@ -1081,26 +1097,19 @@ tutor_update_error_practice_suggestion (void)
 	top_count = error_pareto_get_top_chars (&top_chars);
 	if (top_count <= 0 || top_chars == NULL)
 		return;
-	if (top_count > MAX_PRACTICE_CHARS)
-		top_count = MAX_PRACTICE_CHARS;
 
-	for (i = 0; i < top_count; i++)
-		set_errors += top_chars[i].wrong_count;
+	top_wrong = top_chars[0].wrong_count;
 
-	if (set_errors == 0 || top_chars[0].wrong_count == 0)
-	{
-		g_free (top_chars);
-		return;
-	}
-
-	dominant = top_chars[0].wrong_count * 10 >= set_errors * 3;
-	clear_leader = top_count == 1 ||
-	                top_chars[0].wrong_count >= top_chars[1].wrong_count + 2;
-
-	if (dominant || clear_leader)
+	/*
+	 * Suggest switching to the beginner-course lesson that contains the
+	 * most frequently missed letter, when it was missed 3+ times.
+	 */
+	if (top_wrong >= 3)
 	{
 		tutor.suggested_practice_char = top_chars[0].uchr;
-		tutor.suggest_practice_switch = TRUE;
+		tutor.suggested_basic_lesson = basic_find_lesson_for_char (top_chars[0].uchr);
+		if (tutor.suggested_basic_lesson > 0)
+			tutor.suggest_practice_switch = TRUE;
 	}
 
 	g_free (top_chars);

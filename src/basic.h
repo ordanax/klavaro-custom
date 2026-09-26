@@ -30,6 +30,10 @@ gboolean basic_get_lesson_increased (void);
 
 void basic_set_lesson_increased (gboolean state);
 
+/* Find the beginner-course lesson (1..43) that contains the given
+ * character, or 0 when the letter is not part of the basic course. */
+gint basic_find_lesson_for_char (gunichar uchr);
+
 /*
  * Auxiliar functions
  */

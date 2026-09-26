@@ -72,6 +72,59 @@ basic_get_lesson_increased ()
 	return (basic.lesson_increased);
 }
 
+gint
+basic_find_lesson_for_char (gunichar uchr)
+{
+	FILE *fh;
+	gchar line_str[16];
+	gchar *lesson_file;
+	gint lesson;
+	gint i, j;
+	gint found = 0;
+	gboolean got_lesson;
+
+	lesson_file = g_build_filename (main_path_data (), "basic_lessons.txt", NULL);
+	fh = (FILE *) g_fopen (lesson_file, "r");
+	g_free (lesson_file);
+	if (!fh)
+		return 0;
+
+	uchr = g_unichar_tolower (uchr);
+	lesson = 1;
+	got_lesson = FALSE;
+	while (fgets (line_str, 16, fh))
+	{
+		if (g_ascii_strncasecmp (line_str, "Lesson", 6) == 0)
+		{
+			lesson = atoi (line_str + 7);
+			got_lesson = TRUE;
+
+			for (i = 0; i < 4 && fgets (line_str, 16, fh); i++)
+				for (j = 0; j < 14 && line_str[j]; j++)
+					if (line_str[j] == '1' &&
+					    g_unichar_tolower (keyb_get_lochars (i, j)) == uchr &&
+					    g_unichar_isgraph (keyb_get_lochars (i, j)))
+						found = (found == 0) ? lesson : found;
+
+			fgets (line_str, 16, fh);
+
+			for (i = 0; i < 4 && fgets (line_str, 16, fh); i++)
+				for (j = 0; j < 14 && line_str[j]; j++)
+					if (line_str[j] == '1' &&
+					    g_unichar_tolower (keyb_get_upchars (i, j)) == uchr &&
+					    g_unichar_isgraph (keyb_get_upchars (i, j)))
+						found = (found == 0) ? lesson : found;
+
+			fgets (line_str, 16, fh);
+		}
+		if (found)
+			break;
+	}
+	fclose (fh);
+	g_assert (got_lesson);
+	return (found);
+}
+
 void
 basic_set_lesson_increased (gboolean state)
 {
